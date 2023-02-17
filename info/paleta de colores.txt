@@ -1,0 +1,4 @@
+#ebeaea   blanco crema - FONDO
+#6c5b2f   marron - TEXTOS
+#909585   gris - FONDO DE IMAGEN Y SOMBRAS
+#ab5629   marron mas oscuro - DIVISORIOS
