@@ -567,6 +567,16 @@ footer{
     padding: 20px;
     filter: drop-shadow( 2px 2px 5px var(--backgroundcolor));
 }
+.contact-board-booking{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.contact-board-booking:hover, .contact-board-social div img:hover{
+    scale: 120%;
+    /* color: white; */
+    filter: invert(100%) 
+}
 .contact-board-social{
     display: flex;
     flex-direction: row;
