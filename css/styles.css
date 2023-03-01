@@ -15,10 +15,7 @@ body{
 main h2, section{
     margin: 0 150px;
 }
-
-/* ---------------- PAGINA 1 -- INDEX------------- */
-                /* --------------HEADER PRINCIPAL DE LA PAGINA--------------*/
-
+/* HEADER PRINCIPAL DE LA PAGINA */
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +44,9 @@ main h2, section{
     width: 60%;
     list-style: none;
 }
+.header ul li{
+    transition: all 0.3s ease;
+}
 .header ul li a{
     text-decoration: none;
     text-shadow: 1px 1px 3px var(--backgroundcolor), 5px 5px 15px, 5px 5px 8px var(--backgroundcolor), -1px -1px 3px var(--backgroundcolor), -5px -5px 8px var(--backgroundcolor);
@@ -63,101 +63,37 @@ main h2, section{
 #hr{
     border-style: solid;
     height: 2px;
-    margin: 2em 100px;
+    margin: 30px 100px;
     background-color: var(--footercolorshadow);
     color: var(--footercolorshadow);
     box-shadow: 3px 3px 10px var(--footercolorshadow);
 }
-
-                /* ---------------MAIN--------------*/
-
+/* MAIN */
 .main-foto{
-    background-image: url("../assets/GSH\ foto01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    box-shadow: inset 2px 2px 25px var(--backgroundcolor);
     width: 100%;
-    height: 30em;
+    height: 470px;
 }
+
 .main-h1{
     color: var(--fontpcolor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.8em;
     text-align: center;
-    padding: 2em 4em;
+    padding: 30px 80px;
     font-style: italic;
-}
-.main-h1-index{
-    color: var(--fontpcolor);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2em;
-    text-align: center;
-    padding: 1em 4em;
-    font-style: italic;
-    text-shadow: 1px 1px 4px var(--fontpcolor);
 }
 .main-h2{
     color: var(--fontpcolor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1em;
     text-align: center;
-    padding: 2em 4em;
+    padding: 20px 70px;
 }
-.main-div{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 100px;
-}
-.main-div img:hover{
-    scale: 120%;
-}
-
-                /*------------------SECTION---------------*/
-
-.section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    margin: 5em 150px;
-    row-gap: 10px;
-    height: 1000px;
-    /* background-color: white;
-    border-radius: 12px; */
-}
-.section-divfoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section-foto{
-    width: 90%;
-    padding: 30px;
-    height: auto;
-    background-size: cover;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-}
-.section-container-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.section-text{
-    text-align: justify;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-}
-.section-text p{
-    color: var(--fontpcolor);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-                /* ----------------FOOTER ------------------------*/
-
+/* FOOTER */
 footer{
     display: flex;
     flex-direction: row;
@@ -166,7 +102,6 @@ footer{
     align-items: center;
     background-color: var(--footercolor);
     box-shadow: 2px -5px 40px var(--footercolorshadow);
-    margin-top: 2em;
 }
 .footer-divmap{
     padding: 20px 0;
@@ -204,75 +139,97 @@ footer{
     filter: drop-shadow(3px 3px 4px black);
     filter: invert(100%);
 }
-
-/*--------------------- FIXED ICONS------------------ */
-
-.icon-whatsapp{
+/* FIXED ICONS */
+.icon{
     position: fixed;
+    z-index: 20;
+    /* filter: drop-shadow(3px 3px 4px black); */
+    filter: grayscale(60%);
+    transition: all 0.3s ease;
+}
+.icon-whatsapp{
     bottom: 28px;
     right: 15px;
-    z-index: 20;
-    filter: drop-shadow(3px 3px 4px black);
-    filter: grayscale(60%);
-}
-.icon-whatsapp:hover{
-    scale: 130%;
-    filter: grayscale(0%);
 }
 .icon-instagram{
-    position: fixed;
     bottom: 130px;
     right: 15px;
-    z-index: 20;
-    filter: drop-shadow(3px 3px 4px black);
-    filter: grayscale(60%);
-}
-.icon-instagram:hover{
-    scale: 130%;
-    filter: grayscale(0%);
 }
 .icon-facebook{
-    position: fixed;
     bottom: 232px;
     right: 15px;
-    z-index: 20;
-    filter: drop-shadow(3px 3px 4px black);
-    filter: grayscale(60%);
-}
-.icon-facebook:hover{
-    scale: 130%;
-    filter: grayscale(0%);
 }
 .icon-linkedin{
-    position: fixed;
     bottom: 334px;
     right: 15px;
-    z-index: 20;
-    filter: drop-shadow(3px 3px 4px black);
-    filter: grayscale(60%);
 }
-.icon-linkedin:hover{
+.icon-whatsapp:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-facebook:hover{
     scale: 130%;
     filter: grayscale(0%);
 }
-
-/* ---------------- PAGINA 2 -- SERVICES------------- */
-
+/* PAGE 1 INDEX */
+    /* MAIN */
+.main-foto-home{
+    background-image: url("../assets/GSH\ foto01.jpg");
+}
+.main-h1-index{
+    text-shadow: 2px 2px 5px var(--fontpcolor);
+}
+.main-div{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+.main-div img:hover{
+    scale: 120%;
+}
+    /* SECTION */
+.section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin: 5em 150px;
+    row-gap: 10px;
+    height: 1000px;
+}
+.section-divfoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-foto{
+    width: 90%;
+    padding: 30px;
+    height: auto;
+    background-size: cover;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+.section-container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-text{
+    text-align: justify;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.section-text p{
+    color: var(--fontpcolor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* PAGINA 2 SERVICES */
 .main-foto-services{
     background-image: url("../assets/GSH\ foto04a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    width: 100%;
-    height: 30em;
-    box-shadow: inset 2px 2px 25px var(--backgroundcolor);
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin: 0 150px; */
 }
 .container .card{
     position: relative;
@@ -338,39 +295,89 @@ footer{
     color: #333;
     padding: 5px;
 }
-
-/* ---------------- PAGINA 3 -- EXPERIENCE -- (en construccion) ----------- */
-
+/*  PAGINA 3 EXPERIENCE */
 .main-foto-experience{
     background-image: url("../assets/GSH\ foto02a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    width: 100%;
-    height: 30em;
-    box-shadow: inset 2px 2px 25px var(--backgroundcolor);
 }
-.article-container{
+/* se inserta un nuevo card */
+.blog-post {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.card-text{
-    width:30%;
-    margin:auto
-}
-.card-list{
-    width: 20%;
-    margin: auto;
-}
+    align-items: center;
+    max-width: 90rem;
+    background-color: #fff;
+    padding: 2.5rem;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    margin: 100px;
+  }
+  .blog-post__img {
+    position: relative;
+    min-width: 28rem;
+    max-width: 28rem;
+    height: 23rem;
+    transform: translateX(-8rem);
+  }
+  .blog-post__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blog-post__img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+    opacity: 0.5;
+  }
+  .blog-post__date span {
+    display: block;
+    color: #8e8c8c;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .blog-post__title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: var(--fontpcolor)
+  }
+  .blog-post__info p {
+    margin-bottom: 3rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  @media (max-width: 1068px) {
+    .blog-post {
+      max-width: 80rem;
+      margin: 100px 50px;
+    }
+    .blog-post__img {
+      min-width: 30rem;
+      max-width: 30rem;
+    }
+  }
+  @media (max-width: 868px) {
+    .blog-post {
+      max-width: 70rem;
+      margin: 100px 35px;
+    }
+  }
+  @media (max-width: 768px) {
+    .blog-post {
+      padding: 2.5rem;
+      flex-direction: column;
+      margin: 100px 10px;
+    }
+    .blog-post__img {
+      min-width: 100%;
+      transform: translate(0, -8rem);
+    }
+  }
+/* fin del nuevo card */
 #hr-experience{
-    margin: 2em 100px;
+    margin: 20px 100px;
 }
-
 /*  A PARTIR DE ACA VA EL CODIGO DE LOS COMENTARIOS */
-
 #experience-review {
     font-family: sans-serif;
     margin: auto;
@@ -380,7 +387,6 @@ footer{
     padding: 30px;
     box-sizing: border-box;
 }
-
 #experience-review>ul, li {
     padding: 0;
     margin: 0;
@@ -415,14 +421,11 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 #experience-review>ul.review li:first-child {
     opacity: 1;
-    /*Mostramos el primer <li>*/
 }
 #experience-review>ul.review li:target {
     opacity: 1;
-    /*Mostramos el <li> del enlace que pulsemos*/
 }
 #experience-review>.menu {
     text-align: center;
@@ -448,7 +451,7 @@ footer{
     scale: 130%;
     background-color: var(--footercolor);
 }
-.review-pic1{
+.experience-image, .review-image1{
     background-image: url("../assets/Experience/reseña01.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -456,39 +459,19 @@ footer{
     width: 200px;
     height: 200px;
 }
-.review-pic2{
+.review-image2{
     background-image: url("../assets/Experience/reseña02.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
 }
-.review-pic3{
+.review-image3{
     background-image: url("../assets/Experience/reseña03.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
 }
 .checked {
     color: orange;
 }
-
 /* TERMINA EL CODIGO DE LOS COMENTARTIOS */
-
-/* ---------------- PAGINA 4 -- GALLERY -- (en construccion) ----------- */
-
+/* PAGINA 4 GALLERY */
 .main-foto-gallery{
     background-image: url("../assets/GSH\ foto05a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    width: 100%;
-    height: 30em;
-    box-shadow: inset 2px 2px 25px var(--backgroundcolor);
 }
 .carrousel{
     width: 700px;
@@ -511,9 +494,8 @@ footer{
 .gallery-btn{
     display: flex;
     justify-content: space-around;
-
 }
-.gallery-btn input{
+.gallery-btn-input{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1rem;
     padding: 10px;
@@ -522,30 +504,22 @@ footer{
     margin-bottom: 40px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease;
 }
-.gallery-btn input:hover{
+.gallery-btn-input:hover{
     color: white;
     background-color: var(--fontmaincolor);
     scale: 120%;
 }
-
-/* ---------------- PAGINA 5 -- CONTACT -- (en construccion) ----------- */
-
+/* PAGINA 5 CONTACT */
 .main-foto-contact{
     background-image: url("../assets/GSH\ foto03a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    width: 100%;
-    height: 30em;
-    box-shadow: inset 2px 2px 25px var(--backgroundcolor);
 }
 .contact-board{
     display: flex;
     flex-direction: row;
     height: 200px;
-    background-color: var(--fontmaincolor);
+    background-color: #fff;
     margin: 3em 0;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
 }
@@ -565,12 +539,13 @@ footer{
     width: 48px;
     height: 48px;
     padding: 20px;
-    filter: drop-shadow( 2px 2px 5px var(--backgroundcolor));
+    filter: drop-shadow( 1px 1px 10px var(--fontpcolor));
 }
 .contact-board-booking{
     list-style: none;
     text-decoration: none;
     color: black;
+    transition: all 0.3s ease;
 }
 .contact-board-booking:hover, .contact-board-social div img:hover{
     scale: 120%;
@@ -590,7 +565,8 @@ footer{
     height: 24px;
     padding-top: 0;
     padding-bottom: 0;
-    filter: drop-shadow( 2px 2px 5px var(--backgroundcolor));
+    filter: drop-shadow( 1px 1px 10px var(--fontpcolor));
+    transition: all 0.3s ease;
 }
 .contact-article-form{
     display: flex;

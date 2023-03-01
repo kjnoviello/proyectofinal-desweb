@@ -1,0 +1,102 @@
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   1) <!DOCTYPE html>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   2) <html lang="en">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   3) <head>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   4)     <meta charset="UTF-8">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   5)     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   6)     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   7)     <title>Grand Scauriza Hotel - Best place for relax, enjoy and discover new experiences</title>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   8)     <link rel="stylesheet" href="./css/styles.css">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300   9)     <link rel="shortcut icon" href="./assets/favicon.png">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  10) </head>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  11) <body>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  12)             
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  13) <!----------------------------HEADER PRINCIPAL DE LA PAGINA------------------->
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  14) 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  15)     <header class="header">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  16)         <div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  17)             <a href="./index.html"><img src="./assets/logofooter.svg" alt="grand scauriza hotel logo medium"></a>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  18)         </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  19)         <ul>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  20)             <li><a href="./index.html">Home</a></li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  21)             <li><a href="./pages/services.html">Services</a></li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  22)             <li><a href="./pages/experience.html">Experience</a></li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  23)             <li><a href="./pages/gallery.html">Gallery</a></li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  24)             <li><a href="./pages/contact.html">Contact</a></li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  25)         </ul>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  26)     </header>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  27)     <hr id="hr">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  28)            
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  29) <!---------------------------- CUERPO PRINCIPAL DE LA PAGINA----------------->
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  30)                 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  31)     <main>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  32)         <h1 class="main-h1-index">GRAND SCAURIZA HOTEL</h1> 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  33)         <figure class="main-foto"></figure>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  34)         <h2 class="main-h2">Prepare to be delighted when you stay at Panama’s first all inclusive hotel & resort Grand Scauriza. Steeped in history and full of charm, Grand Scauriza Hotel is located right in the heart of historic Panama. We offer an oasis of calm within easy walking distance of many of Panama’s most memorable sights. Let us share our manifesto with you and the story of how we turned this historic colonial home into a beautiful hotel.</h2>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  35)         <div class="main-div"> 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  36)             <img src="./assets/png/icons8-bar-junto-a-la-piscina-30.png" alt="bar junto a la piscina">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  37)             <img src="./assets/png/icons8-piscina-al-aire-libre-30.png" alt="psicina al aire libre">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  38)             <img src="./assets/png/icons8-guardarropa-30.png" alt="service de guardarropa y lavanderia">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  39)             <img src="./assets/png/icons8-sala-de-reuniones-30.png" alt="sala de reuniones y conferencias">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  40)             <img src="./assets/png/icons8-taxi-30.png" alt="puesto de taxi de puerta a puerta">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  41)             <img src="./assets/png/icons8-valet-parking-30.png" alt="servicio de valet parking del automovil">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  42)             <img src="./assets/png/icons8-vestuario-de-hotel-30.png" alt="service de lavanderia y guardarropa">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  43)             <img src="./assets/png/icons8-wifi-30.png" alt="wifi gratis en todo el predio del hotel">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  44)             </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  45)         </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  46) 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  47) <!-----------------------------SECTION DE LA PAGINA------------------>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  48) 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  49)         <section class="section">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  50)             <div class="section-divfoto">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  51)                 <img src="./assets/1section001.jpg" class="section-foto" alt="foto collage del hotel desde varias puntas de vistas diurnas y nocturnas">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  52)             </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  53)             <div class="section-container-text">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  54)                 <div class="section-text">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  55)                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.3 written in 45 BC. is book is a treatise on the theory of ethics, .</p>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  56)                 </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  57)                 <br><br>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  58)                 <div class="section-text">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  59)                     <p>"Lorem iplor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  60)                 </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  61)             </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  62)             <div class="section-text">
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  63)                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  64)             </div>
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  65)             <div class="section-divfoto">
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  66)                 <img src="./assets/1section03.jpg" class="section-foto" alt="gran vista del hotel desde una toma aérea">
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  67)             </div>
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  68)         </section>
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  69)     </main>
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  70)     <hr id="hr">
+4f7defe4 (kevin joel noviello 2023-02-17 16:56:41 -0300  71)                  
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  72) <!-------------------FOOTER FINAL DE PAGINA------------------->
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  73)                 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  74)     <footer class="footer">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  75)         <div class="footer-divmap">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  76)             <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2543.507719619474!2d-80.2962793998441!3d25.636030760081717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1675365159781!5m2!1ses-419!2sar" width="240" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  77)         </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  78)         <div class="footer-containertext">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  79)             <h4>Information</h4>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  80)             <ul>        
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  81)                 <li class="footer-container-list-1">+54-341-4332211</li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  82)                 <li>Av. Palmas verdes 1567, Panama.</li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  83)                 <li>booking@grandscaurizahotel.com</li>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  84)             </ul>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  85)         </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  86)         <div class="footer-legals">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  87)             <h4>Legals</h4>
+061a9ec9 (kevin joel noviello 2023-02-17 16:53:07 -0300  88)             <p>Cuasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quias voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  89)         </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  90)         <div class="footer-divlogo">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  91)             <img src="./assets/logofooter.svg" class="footer-logo" alt="logo Grand Scauriza Hotel footer">
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  92)         </div>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  93)     </footer>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  94)     
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  95)     <a href="https://www.linkedin.com/in/kevinjoelnoviello/" rel="noopener noreferrer" target="_blank"><img src="https://img.icons8.com/color/60/null/linkedin.png" alt="icono de linkedin" class="icon-linkedin"/></a>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  96)     <a href="https://es-la.facebook.com/" rel="noopener noreferrer" target="_blank"><img src="https://img.icons8.com/color/60/null/facebook-new.png" alt="facebook icon" class="icon-facebook" alt="facebook icon"/></a>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  97)     <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img src="https://img.icons8.com/color/60/null/instagram-new--v1.png" alt="icono de instagram" class="icon-instagram" alt="intagram icon"/></a>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  98)     <a href="https://wa.me/3416851106" rel="noopener noreferrer" target="_blank"><img src="https://img.icons8.com/color/60/null/whatsapp--v1.png" alt="icono de whatsapp" class="icon-whatsapp" alt="whatsapp icon"/></a>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300  99) </body>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300 100) </html>
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300 101) 
+^4ed9ea3 (kevin joel noviello 2023-02-17 10:07:39 -0300 102) <!--PONER EN EL FOOTER MIS DATOS-->
