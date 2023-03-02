@@ -32,6 +32,8 @@
         <br>
         <h2 class="main-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis culpa accusamus illum, quidem repellendus molestiae vitae qui consequatur sint eos voluptate non reprehenderit labore alias vero mollitia. Doloremque, fuga!Loremlorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga aspernatur nam maxime ad, debitis facere minus esse expedita aut minima laboriosam sunt, sit quisquam labore, incidunt excepturi eum nemo!
         </h2>
+        <!-- COLOCAR EL IFRAME DEL FOOTER VIEJO -->
+        <!-- <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2543.507719619474!2d-80.2962793998441!3d25.636030760081717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1675365159781!5m2!1ses-419!2sar" width="240" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         <section class="contact-section">
             <article class="contact-board" id="contact-article-form">
                 <div>
@@ -77,7 +79,7 @@
                     <br>
                     <div class="form-comment">
                         <label for="comment">Comment</label>
-                        <input type="text" placeholder="Hello, i would like to...">
+                        <textarea rows="5" cols="10" placeholder="Hello, i would like to..."></textarea>
                     </div>
                     <br>
                     <div class="form-btn">
@@ -101,23 +103,32 @@
     <hr id="hr">
 <!-- FOOTER FINAL DE PAGINA -->
     <footer class="footer">
-        <div class="footer-divmap">
-            <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2543.507719619474!2d-80.2962793998441!3d25.636030760081717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1ses-419!2sar!4v1675365159781!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="footer-containertext">
-            <h4>Information</h4>
-            <ul>        
-                <li class="footer-container-list-1">+54-341-4332211</li>
-                <li>Av. Palmas verdes 1567, Panama.</li>
-                <li>booking@grandscaurizahotel.com</li>
-            </ul>
-        </div>
-        <div class="footer-legals">
-            <h4>Legals</h4>
-            <p>Cuasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
-        </div>
-        <div class="footer-divlogo">
-            <img src="../assets/logofooter.svg" class="footer-logo" alt="logo Grand Scauriza Hotel footer">
+        <div class="footer__container">
+            </div>
+            <div class="footer__top">
+                <div class="footer__top__main">
+                    <p><i>"Best place for relax"</i></p>
+                    <div class="footer-divlogo">
+                        <img src="../assets/logofooter.svg" class="footer-logo" alt="logo Grand Scauriza Hotel footer">
+                    </div>
+                </div>
+                <div class="footer__top">
+                    <h6 class="footer__title">Information</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">+54-341-4332211</li>
+                        <li class="footer__list-item">Av. Palmas verdes 1567, Panama.</li>
+                        <li class="footer__list-item">booking@grandscaurizahotel.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Legals</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eaque quis error soluta ducimus velit nobis perspiciatis aliquid, reprehenderit repellendus?</p>
+                </div>                
+            </div>
+            <hr class="footer__divider">
+            <div class="footer__bottom">
+                <span class="copyright">&copy; 2023  All rights reserved. Design by <strong>Kevin Joel Noviello</strong></span>
+            </div>
         </div>
     </footer>
 <!-- ICONOS FIJOS -->
