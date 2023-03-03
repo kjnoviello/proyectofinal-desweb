@@ -251,7 +251,8 @@ body{
 .container-exp{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    column-gap: 100px;
 }
 .container-exp .card-exp{
     position: relative;
@@ -717,6 +718,8 @@ body{
     .section{
         grid-template-columns: 1fr;
         grid-template-rows: 4fr; }
+    .container-exp{
+        column-gap: 50px; }
     .blog-post {
         padding: 2.5rem;
         flex-direction: column;
