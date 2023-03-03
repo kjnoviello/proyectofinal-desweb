@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 :root{
     --fontmaincolor: #6e5924;
     --fontpcolor: #353535;
@@ -13,7 +14,7 @@ body{
     background-color: var(--backgroundcolor);
 }
 .main-h2, section{
-    margin: 0 150px;
+    margin: 0 100px;
     padding-top: 30px;
 }
 /* HEADER */
@@ -247,21 +248,21 @@ body{
 .main-foto-services{
     background-image: url("../assets/GSH\ foto04a.jpg");
 }
-.container{
+.container-exp{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.container .card{
+.container-exp .card-exp{
     position: relative;
     cursor: pointer;
 }
-.container .card .face{
+.container-exp .card-exp .face{
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
-.container .card .face.face1{
+.container-exp .card-exp .face.face1{
     position: relative;
     background: #333;
     display: flex;
@@ -272,25 +273,25 @@ body{
     z-index: 1;
     transform: translateY(60px);
 }
-.container .card:hover .face.face1{
+.container-exp .card-exp:hover .face.face1{
     background: #606C38;
     transform: translateY(0);
 }
-.container .card .face.face1 .content{
+.container-exp .card-exp .face.face1 .content-exp{
     opacity: 1;
     transition: 0.5s;
 }
-.container .card:hover .face.face1 .content{
+.container-exp .card-exp:hover .face.face1 .content-exp{
     opacity: 1;
 }
-.container .card .face.face1 .content{
+.container-exp .card-exp .face.face1 .content-exp{
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
     text-align: center;
     font-size: 1.5em;
 }
-.container .card .face.face2{
+.container-exp .card-exp .face.face2{
     position: relative;
     background: #fff;
     display: flex;
@@ -301,14 +302,14 @@ body{
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-60px);
 }
-.container .card:hover .face.face2{
+.container-exp .card-exp:hover .face.face2{
     transform: translateY(0);
 }
-.container .card .face.face2 .content p{
+.container-exp .card-exp .face.face2 .content-exp p{
     margin: 0;
     padding: 0;
 }
-.container .card .face.face2 .content a{
+.container-exp .card-exp .face.face2 .content-exp a{
     margin: 56px 0 0;
     display:  inline-block;
     text-decoration: none;
@@ -332,10 +333,10 @@ body{
   }
   .blog-post__img {
     position: relative;
-    min-width: 28rem;
-    max-width: 28rem;
+    min-width: 20rem;
+    max-width: 18rem;
     height: 23rem;
-    transform: translateX(-8rem);
+    transform: translateX(-6rem);
   }
   .blog-post__img img {
     display: block;
@@ -347,7 +348,6 @@ body{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
     opacity: 0.5;
   }
@@ -363,8 +363,13 @@ body{
     text-transform: uppercase;
     color: var(--fontpcolor)
   }
+  .blog-post__text{
+        text-align: justify;
+        display: flex;
+        align-items: center;
+  }
   .blog-post__info p {
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     color: rgba(0, 0, 0, 0.7);
   }
 /* fin del nuevo card */
@@ -467,10 +472,84 @@ body{
 .main-foto-gallery{
     background-image: url("../assets/GSH\ foto05a.jpg");
 }
+
+
 .carrousel{
-    width: 700px;
-    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
+.phce {
+    perspective: 1000px;
+    position: relative;
+    margin:30px;
+  }
+  .phce .content {
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+  }
+  .phce .content::before, .phce .content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform-style: preserve-3d;
+  }
+  .phce .content::before {
+    background-image: var(--bg-image);
+    background-size: cover;
+  }
+  .phce .content::after {
+    background: var(--bg-overlay, none);
+  }
+  .phce:hover > .content::before {
+    transform: scale(1.33) translateX(calc(-12.5% * var(--posX, 0))) translateY(calc(-12.5% * var(--posY, 0)));
+  }
+  .phce:hover > .content {
+    transform: rotateX(calc(22.5deg * var(--posY, 0))) rotateY(calc(-22.5deg * var(--posX, 0)));
+  }
+  .phce:not(:hover) > .content, .phce:not(:hover) > .content::before {
+    transition: transform var(--transition-duration, 500ms) var(--transition-timing-function, linear);
+  }
+  
+  .card {
+    width: min(500px, 100%);
+  }
+  
+  .card-1 {
+    --bg-image: url(https://picsum.photos/1920/1080?random=1) ;
+  }
+  
+  .card-3 {
+    --bg-image: url(https://picsum.photos/1920/1080?random=3) ;
+  }
+  
+  .card-2 {
+    --bg-image: url(https://picsum.photos/1920/1080?random=2) ;
+  }
+  
+  .card-4 {
+    --bg-image: url("../assets/gallery/guest-room.jpg") ;
+  }
+  
+
+  .content {
+    display: grid;
+    place-items: center;
+    min-height: 16rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    color: white;
+    --bg-overlay: rgb(0 0 0 / .5);
+  }
+
+
 .gallery-article{
     display: flex;
     flex-direction: row;
@@ -603,7 +682,7 @@ body{
 .form-telephone{
     grid-area: telephone;
 }
-.form-cooment{
+.form-comment{
     grid-area: comment;
 }
 .form-btn{
@@ -612,64 +691,63 @@ body{
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     .header{
-        padding: 0 80px;
-    }
+        padding: 0 80px; }
     .main-h2, .section{
-        margin: 0 40px;
-    }
+        margin: 0 40px; }
     .header-navbar {
         width: 100%;
         max-height: 0;
-        overflow: hidden;
-    }
+        overflow: hidden; }
     .header-navbar-menu {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-    }
+        padding: 20px; }
     .header label {
         display: inline-flex;
         align-items: center;
-        cursor: pointer;
-    }
+        cursor: pointer; }
     #toggler:checked ~ .header-navbar {
-        max-height: 100%;
-    }
+        max-height: 100%; }
 }
     /* media de experience card */
-@media (max-width: 1068px) {
-    .blog-post {
-        max-width: 80rem;
-        margin: 100px 50px;
-    }
-    .blog-post__img {
-        min-width: 30rem;
-        max-width: 30rem;
-    }
-    }
-    @media (max-width: 868px) {
+/* @media (max-width: 1068px) {
+    
+
+} */
+/* @media (max-width: 868px) {
     .blog-post {
         max-width: 70rem;
-        margin: 100px 35px;
-    }
-    main h2, .section{
-        margin: 0 30px;
-    }
-    }
-    @media (max-width: 768px) {
+        margin: 100px 35px; }
+} */
+@media /*(min-width:576px) and*/ (max-width:768px) {
     .blog-post {
         padding: 2.5rem;
         flex-direction: column;
-        margin: 100px 10px;
-    }
+        margin: 150px auto;
+        max-width:600px;  }  
     .blog-post__img {
-        min-width: 100%;
-        transform: translate(0, -8rem);
-    }
+        min-width: 24rem;
+        max-width: 24rem;
+        /* min-width: 100%; */
+        transform: translate(0, -8rem); }
+    .main-h2, section{
+        margin: 0 10px;}
+        .footer__top{
+            justify-items: center; }
 }
-@media screen and (max-width: 992px){
+@media (min-width:768px) and (max-width: 992px){
     .section{
         grid-template-columns: 1fr;
-        grid-template-rows: 4fr;
-    }
+        grid-template-rows: 4fr; }
+    .blog-post {
+        max-width: 70rem;
+        margin: 100px;
+        padding: 1.5rem;}
+    .blog-post__img {
+        min-width: 18rem;
+        max-width: 16rem;}
+    .main-h2, section{
+        margin: 0 10px;}
+        .footer__top{
+            justify-items: center; }
 }
