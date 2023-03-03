@@ -714,10 +714,12 @@ body{
         align-items: center;
     }
 }
-@media /*(min-width:576px) and*/ (max-width:768px) {
+@media (max-width:768px) {
     .section{
         grid-template-columns: 1fr;
         grid-template-rows: 4fr; }
+    .section-foto{
+        width: 320px; }
     .container-exp{
         column-gap: 50px; }
     .blog-post {
@@ -731,8 +733,9 @@ body{
         transform: translate(0, -8rem); }
     .main-h2, section{
         margin: 0 10px;}
-        .footer__top{
-            justify-items: center; }
+    .footer__top{
+        justify-items: center;
+        margin-bottom: 30px; }
 }
 @media (min-width:768px) and (max-width: 992px){
     .section{
