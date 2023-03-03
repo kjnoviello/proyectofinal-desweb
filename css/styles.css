@@ -47,7 +47,7 @@ body{
     gap: 25px;
 }
 .header-navbar-menu li{
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .header-navbar-menu li:hover{
     scale: 120%;
@@ -708,18 +708,15 @@ body{
         cursor: pointer; }
     #toggler:checked ~ .header-navbar {
         max-height: 100%; }
+    .gallery-article{
+        flex-direction: column;
+        align-items: center;
+    }
 }
-    /* media de experience card */
-/* @media (max-width: 1068px) {
-    
-
-} */
-/* @media (max-width: 868px) {
-    .blog-post {
-        max-width: 70rem;
-        margin: 100px 35px; }
-} */
 @media /*(min-width:576px) and*/ (max-width:768px) {
+    .section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr; }
     .blog-post {
         padding: 2.5rem;
         flex-direction: column;
@@ -728,7 +725,6 @@ body{
     .blog-post__img {
         min-width: 24rem;
         max-width: 24rem;
-        /* min-width: 100%; */
         transform: translate(0, -8rem); }
     .main-h2, section{
         margin: 0 10px;}
