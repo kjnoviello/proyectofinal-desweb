@@ -10,8 +10,6 @@
     margin: 0;
     padding: 0;
 }
-/* .mySlides {display: none;} */
-/* .image {vertical-align: middle;} */
 body{
     background-color: var(--backgroundcolor);
 }
@@ -31,7 +29,6 @@ body{
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     z-index: 10;
-    /* max-width: 960px; */
     margin: 0 auto;
 }
 .header a {
@@ -167,25 +164,28 @@ body{
 .icon{
     position: fixed;
     z-index: 20;
-    /* filter: drop-shadow(3px 3px 4px black); */
     filter: grayscale(60%);
     transition: all 0.3s ease;
 }
 .icon-whatsapp{
     bottom: 28px;
     right: 15px;
+    filter: drop-shadow(3px 3px 4px black);
 }
 .icon-instagram{
     bottom: 130px;
     right: 15px;
+    filter: drop-shadow(3px 3px 4px black);
 }
 .icon-facebook{
     bottom: 232px;
     right: 15px;
+    filter: drop-shadow(3px 3px 4px black);
 }
 .icon-linkedin{
     bottom: 334px;
     right: 15px;
+    filter: drop-shadow(3px 3px 4px black);
 }
 .icon-whatsapp:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-facebook:hover{
     scale: 130%;
@@ -610,6 +610,7 @@ body{
 .contact-board{
     display: flex;
     flex-direction: row;
+    
     height: auto;
     background-color: #fff;
     margin: 3em 0;
@@ -823,6 +824,15 @@ body{
         margin-bottom: 30px; }
     .contact-board{
         flex-direction: column;
+    }
+    .iconos-s{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 10px;
+    }
+    .icon{
+        position:initial;
     }
 }
 @media (max-width:576px){
