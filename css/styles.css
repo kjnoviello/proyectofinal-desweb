@@ -337,7 +337,6 @@ body{
 .main-foto-experience{
     background-image: url("../assets/GSH\ foto02a.jpg");
 }
-/* se inserta un nuevo card */
 .blog-post {
     display: flex;
     align-items: center;
@@ -346,63 +345,61 @@ body{
     padding: 2.5rem;
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
     margin: 100px;
-  }
-  .blog-post__img {
+}
+.blog-post__img {
     position: relative;
     min-width: 20rem;
     max-width: 18rem;
     height: 23rem;
     transform: translateX(-6rem);
-  }
-  .blog-post__img img {
+}
+.blog-post__img img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .blog-post__img::before {
+}
+.blog-post__img::before {
     content: "";
     position: absolute;
     inset: 0;
     box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
     opacity: 0.5;
-  }
-  .fade {
+}
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  @keyframes fade {
+}
+@keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-  }
-  .active2 {
+}
+.active2 {
     background-color: #717171;
-  }
-  .blog-post__date span {
+}
+.blog-post__date span {
     display: block;
     color: #8e8c8c;
     font-weight: 600;
     margin: 0.5rem 0;
-  }
-  .blog-post__title {
+}
+.blog-post__title {
     font-size: 2.5rem;
     margin: 1.5rem 0 2rem;
     text-transform: uppercase;
     color: var(--fontpcolor)
-  }
-  .blog-post__text{
+}
+.blog-post__text{
         text-align: justify;
         display: flex;
         align-items: center;
-  }
-  .blog-post__info p {
+}
+.blog-post__info p {
     color: rgba(0, 0, 0, 0.7);
-  }
-/* fin del nuevo card */
+}
 #hr-experience{
     margin: 20px 100px;
 }
-/*  A PARTIR DE ACA VA EL CODIGO DE LOS COMENTARIOS */
 #experience-review {
     font-family: sans-serif;
     margin: auto;
@@ -666,9 +663,6 @@ body{
     width: 100%; 
 }
 .contact-article-form img{
-    /* margin: 2em;
-    width: auto;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
     width: 400px;
     padding: 30px;
     margin: 2em;
@@ -679,7 +673,6 @@ body{
 .contact-form{
     margin: 2em;
     background-color: var(--footercolorshadow);
-    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -807,7 +800,6 @@ body{
     .blog-post {
         padding: 2.5rem;
         flex-direction: column;
-        /* margin: 150px auto; */
         max-width:600px;  }  
     .blog-post__img {
         min-width: 24rem;
