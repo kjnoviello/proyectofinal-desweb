@@ -610,7 +610,7 @@ body{
 .contact-board{
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: auto;
     background-color: #fff;
     margin: 3em 0;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
@@ -641,8 +641,6 @@ body{
 }
 .contact-board-booking:hover, .contact-board-social div img:hover{
     scale: 120%;
-    /* color: white; */
-    filter: invert(100%) 
 }
 .contact-board-social{
     display: flex;
@@ -666,15 +664,21 @@ body{
     justify-content: center;
     width: 100%; 
 }
-.contact-article-form figure{
+.contact-article-form img{
+    /* margin: 2em;
+    width: auto;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
+    width: 400px;
+    padding: 30px;
     margin: 2em;
-    width: 50%;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    height: auto;
+    background-size: cover;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
 }
 .contact-form{
     margin: 2em;
     background-color: var(--footercolorshadow);
-    width: 50%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -706,6 +710,46 @@ body{
 }
 .form-btn{
     grid-area: btn;
+}
+.contact-form>input,
+.contact-form>textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 15px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.contact-form>input,
+.contact-form>textarea,
+.contact-form>button {
+    display: block;
+}
+::-webkit-input-placeholder { color: white; }
+:-ms-input-placeholder { color: white; }
+::placeholder { color: white; }
+#textarea {
+    margin-bottom: 30px
+}
+#btn{
+    margin-right: 0; 
+    margin-left: auto;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn a{
+    color: white;
+    font-size: 1rem;
+}
+#btn a:hover {
+    color: #000000;
+    font-weight: 600;
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
@@ -748,6 +792,10 @@ body{
         margin: 0 10px;}
     .footer__top{
         justify-items: center; }
+    .contact-article-form{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media (max-width:768px) {
     .section{
@@ -764,11 +812,18 @@ body{
         min-width: 24rem;
         max-width: 24rem;
         transform: translate(0, -5rem); }
+    .contact-article-form{
+        flex-direction: column;
+        align-items: center;
+    }
     .main-h2, section{
         margin: 0 10px;}
     .footer__top{
         justify-items: center;
         margin-bottom: 30px; }
+    .contact-board{
+        flex-direction: column;
+    }
 }
 @media (max-width:576px){
     .header{
