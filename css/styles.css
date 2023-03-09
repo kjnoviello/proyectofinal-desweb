@@ -244,6 +244,7 @@ body{
     padding: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .section-text p{
     color: var(--fontpcolor);
@@ -494,7 +495,115 @@ body{
 .main-foto-gallery{
     background-image: url("../assets/GSH\ foto05a.jpg");
 }
-.carrousel{
+/* lightboxs */
+.row > .column {
+    padding: 0 8px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 20%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000f2;
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1100px;
+}
+.modal-content2 {
+    max-width: 480px;
+}
+.modal-content3, .modal-content4{
+    max-width: 800px;
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {
+    display: none
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+} 
+img.demo, img.demo2, img.demo3, img.demo4 {
+    opacity: 0.6;
+}
+.actives,
+.demo:hover, .demo2:hover, .demo3:hover, .demo4:hover {
+    opacity: 1;
+}
+img.hover-shadow {
+    transition: 0.3s;
+} 
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* gallery-cards */
+.gallery-cards{
     display: flex;
     flex-wrap: wrap;
     width: auto;
@@ -512,6 +621,7 @@ body{
     font-size: 3rem;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .phce .content {
     position: relative;
@@ -662,13 +772,8 @@ body{
     justify-content: center;
     width: 100%; 
 }
-.contact-article-form img{
-    width: 400px;
-    padding: 30px;
+.contact-article-form-img{
     margin: 2em;
-    height: auto;
-    background-size: cover;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
 }
 .contact-form{
     margin: 2em;
@@ -745,6 +850,10 @@ body{
     color: #000000;
     font-weight: 600;
 }
+.contact-iframe{
+    margin: 0 30px;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 80%);
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     .header{
@@ -788,8 +897,7 @@ body{
         justify-items: center; }
     .contact-article-form{
         flex-direction: column;
-        align-items: center;
-    }
+        align-items: center; }
 }
 @media (max-width:768px) {
     .section{
@@ -807,25 +915,26 @@ body{
         transform: translate(0, -5rem); }
     .contact-article-form{
         flex-direction: column;
-        align-items: center;
-    }
+        align-items: center; }
     .main-h2, section{
         margin: 0 10px;}
     .footer__top{
         justify-items: center;
         margin-bottom: 30px; }
     .contact-board{
-        flex-direction: column;
-    }
+        flex-direction: column; }
     .iconos-s{
         display: flex;
         justify-content: center;
         gap: 25px;
-        margin-top: 10px;
-    }
+        margin-top: 10px; }
     .icon{
-        position:initial;
-    }
+        position:initial; }
+    .contact-iframe-p{
+        display: none; }
+    .contact-iframe{
+        width: 400px;
+        height: 250px; }
 }
 @media (max-width:576px){
     .header{

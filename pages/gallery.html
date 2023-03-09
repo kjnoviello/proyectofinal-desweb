@@ -34,25 +34,209 @@
         <h2 class="main-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis culpa accusamus illum, quidem repellendus molestiae vitae qui consequatur sint eos voluptate non reprehenderit labore alias vero mollitia. Doloremque, fuga!Loremlorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga aspernatur nam maxime ad, debitis facere minus esse expedita aut minima laboriosam sunt, sit quisquam labore, incidunt excepturi eum nemo!
         </h2>
         <section>
-            <article class="carrousel">
+            <!-- BEDROOM LIGHTBOX -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="../assets/gallery/bedrooms/room01_100x439.jpg" alt="Desire Room With Open View" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="../assets/gallery/bedrooms/room02_100x439.jpg" alt="Resort Two Queen Room" style="width:100%">
+                     </div>
+                     <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="../assets/gallery/bedrooms/room03_100x439.jpg" alt="Premier Two Queen" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="../assets/gallery/bedrooms/room04_100x439.jpg" alt="Express King Pool View" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="../assets/gallery/bedrooms/room05_100x439.jpg" alt="Desire Room Bathroom" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                     </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../assets/gallery/bedrooms/room01_100x439.jpg" style="width:100%" onclick="currentSlide(1)" alt="Desire Room With Open View">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../assets/gallery/bedrooms/room02_100x439.jpg" style="width:100%" onclick="currentSlide(2)" alt="Resort Two Queen Room">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../assets/gallery/bedrooms/room03_100x439.jpg" style="width:100%" onclick="currentSlide(3)" alt="Premier Two Queen">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../assets/gallery/bedrooms/room04_100x439.jpg" style="width:100%" onclick="currentSlide(4)" alt="Express King Pool View">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../assets/gallery/bedrooms/room05_100x439.jpg" style="width:100%" onclick="currentSlide(5)" alt="Desire Room Bathroom">
+                    </div>
+                </div>
+            </div>
+            <!-- GARDEN LIGHTBOX -->
+            <div id="myModal2" class="modal">
+                <span class="close cursor" onclick="closeModal2()">&times;</span>
+                <div class="modal-content modal-content2">
+                    <div class="mySlides2">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="../assets/gallery/Garden/garden01_480x550.jpg" alt="Spring On Our Conservatory" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="../assets/gallery/Garden/garden02_480x550.jpg" alt="Hall Of Roses" style="width:100%">
+                     </div>
+                     <div class="mySlides2">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="../assets/gallery/Garden/garden03_480x550.jpg" alt="Garden After Rain" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="../assets/gallery/Garden/garden04_480x550.jpg" alt="Lake on Garden" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="../assets/gallery/Garden/garden05_480x550.jpg" alt="Garden`s Entrance" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption2"></p>
+                     </div>
+                    <div class="column">
+                        <img class="demo2 cursor" src="../assets/gallery/Garden/garden01_480x550.jpg" style="width:100%" onclick="currentSlide2(1)" alt="Spring On Our Conservatory">
+                    </div>
+                    <div class="column">
+                        <img class="demo2 cursor" src="../assets/gallery/Garden/garden02_480x550.jpg" style="width:100%" onclick="currentSlide2(2)" alt="Hall Of Roses">
+                    </div>
+                    <div class="column">
+                        <img class="demo2 cursor" src="../assets/gallery/Garden/garden03_480x550.jpg" style="width:100%" onclick="currentSlide2(3)" alt="Garden After Rain">
+                    </div>
+                    <div class="column">
+                        <img class="demo2 cursor" src="../assets/gallery/Garden/garden04_480x550.jpg" style="width:100%" onclick="currentSlide2(4)" alt="Lake on Garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo2 cursor" src="../assets/gallery/Garden/garden05_480x550.jpg" style="width:100%" onclick="currentSlide2(5)" alt="Garden`s Entrance">
+                    </div>
+                </div>
+            </div>
+            <!-- POOLS LIGHTBOX -->
+            <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <div class="modal-content modal-content3">
+                    <div class="mySlides3">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="../assets/gallery/Pool/pool01.jpg" alt="Pool View" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="../assets/gallery/Pool/pool02.jpg" alt="Internal Pool" style="width:100%">
+                     </div>
+                     <div class="mySlides3">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="../assets/gallery/Pool/pool03.jpg" alt="Internal Pool Side view" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="../assets/gallery/Pool/pool04.jpg" alt="Relax Area" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="../assets/gallery/Pool/pool05.jpg" alt="Main Pool" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption3"></p>
+                     </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="../assets/gallery/Pool/pool01.jpg" style="width:100%" onclick="currentSlide3(1)" alt="Pool View">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="../assets/gallery/Pool/pool02.jpg" style="width:100%" onclick="currentSlide3(2)" alt="Internal Pool view">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="../assets/gallery/Pool/pool03.jpg" style="width:100%" onclick="currentSlide3(3)" alt="Internal Pool Side view">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="../assets/gallery/Pool/pool04.jpg" style="width:100%" onclick="currentSlide3(4)" alt="Relax Area">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="../assets/gallery/Pool/pool05.jpg" style="width:100%" onclick="currentSlide3(5)" alt="Main Pool">
+                    </div>
+                </div>
+            </div>
+            <!-- FACILITIES LIGHTBOX -->
+            <div id="myModal4" class="modal">
+                <span class="close cursor" onclick="closeModal4()">&times;</span>
+                <div class="modal-content modal-content4">
+                    <div class="mySlides4">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="../assets/gallery/facilities/fac01_640x427.jpg" alt="Conference Room Numer One" style="width:100%">
+                    </div>
+                    <div class="mySlides4">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="../assets/gallery/facilities/fac02_640x427.jpg" alt="Hotel Lobby" style="width:100%">
+                     </div>
+                     <div class="mySlides4">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="../assets/gallery/facilities/fac03_640x427.jpg" alt="Information Stand" style="width:100%">
+                    </div>
+                    <div class="mySlides4">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="../assets/gallery/facilities/fac04_640x427.jpg" alt="Room Service" style="width:100%">
+                    </div>
+                    <div class="mySlides4">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="../assets/gallery/facilities/fac05_640x427.jpg" alt="Gym" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption4"></p>
+                     </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="../assets/gallery/facilities/fac01_640x427.jpg" style="width:100%" onclick="currentSlide4(1)" alt="Conference Room Numer One">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="../assets/gallery/facilities/fac02_640x427.jpg" style="width:100%" onclick="currentSlide4(2)" alt="Hotel Lobby">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="../assets/gallery/facilities/fac03_640x427.jpg" style="width:100%" onclick="currentSlide4(3)" alt="Information Stand">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="../assets/gallery/facilities/fac04_640x427.jpg" style="width:100%" onclick="currentSlide4(4)" alt="Room Service">
+                    </div>
+                    <div class="column">
+                        <img class="demo4 cursor" src="../assets/gallery/facilities/fac05_640x427.jpg" style="width:100%" onclick="currentSlide4(5)" alt="Gym">
+                    </div>
+                </div>
+            </div>
+        <article class="gallery-cards">
                 <div class="phce card card-1">
                     <div class="content">
-                        <a href="#" target="_blank" class="phce-a">Bedrooms</a>
+                        <p class="phce-a hover-shadow cursor" onclick="openModal();currentSlide(1)" >Bedrooms</p>
                     </div>
                 </div>
                 <div class="phce card card-2">
                     <div class="content">
-                        <a href="#" target="_blank" class="phce-a">Garden</a>
+                        <p class="phce-a hover-shadow cursor" onclick="openModal2();currentSlide(1)" >Garden</p>
                     </div>
                 </div>
                 <div class="phce card card-3">
                     <div class="content">
-                        <a href="#" target="_blank" class="phce-a">Pools</a>
+                        <p class="phce-a hover-shadow cursor" onclick="openModal3();currentSlide(1)" >Pools</p>
                     </div>
                 </div>
                 <div class="phce card card-4">
                     <div class="content">
-                        <a href="#" target="_blank" class="phce-a">Facilities</a>
+                        <p class="phce-a hover-shadow cursor" onclick="openModal4();currentSlide(1)" >Facilities</p>
                     </div>
                 </div>
             </article>
@@ -118,4 +302,3 @@
      <script src="../js/script.js"></script>
 </body>
 </html>
-<!--PONER EN EL FOOTER MIS DATOS-->
