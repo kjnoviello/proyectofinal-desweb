@@ -13,7 +13,7 @@
 body{
     background-color: var(--backgroundcolor);
 }
-.main-h2, section{
+.main-h2{
     margin: 0 100px;
     padding-top: 30px;
 }
@@ -860,7 +860,7 @@ img.hover-shadow {
         padding: 20px 80px 0 80px; }
     #hr{
         margin: 20px 50px;}
-    .main-h2, .section{
+    .main-h2{
         margin: 0 40px; }
     .header-navbar {
         width: 100%;
@@ -891,7 +891,7 @@ img.hover-shadow {
     .blog-post__img {
         min-width: 18rem;
         max-width: 16rem;}
-    .main-h2, section{
+    .main-h2{
         margin: 0 10px;}
     .contact-article-form{
         flex-direction: column;
@@ -914,7 +914,7 @@ img.hover-shadow {
     .contact-article-form{
         flex-direction: column;
         align-items: center; }
-    .main-h2, section{
+    .main-h2{
         margin: 0 10px;}
     .footer__top{
         justify-items: center;
