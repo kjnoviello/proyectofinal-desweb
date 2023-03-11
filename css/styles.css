@@ -97,7 +97,7 @@ body{
     color: var(--fontpcolor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1em;
-    text-align: center;
+    text-align: justify;
 }
 /* FOOTER */
 .footer {
@@ -893,8 +893,6 @@ img.hover-shadow {
         max-width: 16rem;}
     .main-h2, section{
         margin: 0 10px;}
-    .footer__top{
-        justify-items: center; }
     .contact-article-form{
         flex-direction: column;
         align-items: center; }
@@ -921,6 +919,8 @@ img.hover-shadow {
     .footer__top{
         justify-items: center;
         margin-bottom: 30px; }
+    .footer__list-item{
+        text-align: center; } 
     .contact-board{
         flex-direction: column; }
     .iconos-s{
