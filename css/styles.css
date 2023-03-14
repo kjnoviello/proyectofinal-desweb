@@ -189,7 +189,6 @@ body{
 }
 .icon-whatsapp:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-facebook:hover{
     scale: 130%;
-    filter: grayscale(0%);
 }
 /* PAGE 1 INDEX */
     /* MAIN */
