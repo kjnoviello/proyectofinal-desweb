@@ -892,7 +892,7 @@ img.hover-shadow {
         display: inline-flex;
         align-items: center;
         cursor: pointer; }
-    #toggler:checked ~ .header-navbar {
+    #toggler:checked ~ .navbar {
         max-height: 100%; }
     .gallery-article{
         flex-direction: column;
