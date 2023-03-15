@@ -30,11 +30,11 @@
 <!-- CUERPO PRINCIPAL DE LA PAGINA -->
     <main>
         <figure class="main-foto main-foto-contact"></figure>
-        <h1 class="main-h1">Feel free to leave us your message</h1>
+        <h1 class="main-h main-h1">Feel free to leave us your message</h1>
         <br>
-        <h2 class="main-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis culpa accusamus illum, quidem repellendus molestiae vitae qui consequatur sint eos voluptate non reprehenderit labore alias vero mollitia. Doloremque, fuga!Loremlorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga aspernatur nam maxime ad, debitis facere minus esse expedita aut minima laboriosam sunt, sit quisquam labore, incidunt excepturi eum nemo!
+        <h2 class="main-h main-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis culpa accusamus illum, quidem repellendus molestiae vitae qui consequatur sint eos voluptate non reprehenderit labore alias vero mollitia. Doloremque, fuga!Loremlorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga aspernatur nam maxime ad, debitis facere minus esse expedita aut minima laboriosam sunt, sit quisquam labore, incidunt excepturi eum nemo!
         </h2>
-        <section class="contact-section">
+        <section class="section-pagw">
             <article class="contact-board" id="contact-article-form">
                 <div>
                     <img src="../assets/contact/icons8-dirección-48.png" alt="icono de direccion en mapa">
@@ -50,15 +50,15 @@
                 </div>
             </article>
             <article class="contact-article-form">
-                <form class="contact-form" action="">
-                    <input type="text" placeholder="Name" class="form-name">
-                    <input type="text" placeholder="Last name" class="form-last-name">
+                <form class="contact-form" action="form.php" method="get">
+                    <input type="text" placeholder="Name" class="form-name" required="required">
+                    <input type="text" placeholder="Last name" class="form-last-name" required="required">
                     <br>
-                    <input type="email" name="email" id="" placeholder="Email" class="form-email">
+                    <input type="email" name="email" id="" placeholder="Email" class="form-email" required="required">
                     <br>
-                    <input type="tel" name="telephone" id="" placeholder="Phone number"class="form-telephone">
+                    <input type="tel" name="telephone" id="" placeholder="Phone number"class="form-telephone" required="required">
                     <br>                   
-                    <textarea rows="5" cols="4" placeholder="Hello, i would like to..." class="form-comment"></textarea>                   
+                    <textarea rows="5" cols="4" placeholder="Hello, i would like to..." class="form-comment" required="required"></textarea>                   
                     <br>                    
                     <button type="submit" id="btn" class="form-btn"><a href="#">Send</a></button>                  
                 </form>
