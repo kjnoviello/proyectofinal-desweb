@@ -42,18 +42,18 @@ body{
 #header-logo-xs{
     display: none;
 }
-.header-navbar-menu {
+.navbar-menu {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-.header-navbar-menu li{
+.navbar-menu li{
     transition: all 0.5s ease;
 }
-.header-navbar-menu li:hover{
+.navbar-menu li:hover{
     scale: 120%;
 }
-.header-navbar-menu li a{
+.navbar-menu li a{
     text-decoration: none;
     text-shadow: 1px 1px 3px var(--backgroundcolor), 5px 5px 15px, 5px 5px 8px var(--backgroundcolor), -1px -1px 3px var(--backgroundcolor), -5px -5px 8px var(--backgroundcolor);
     cursor: pointer;
@@ -880,11 +880,11 @@ img.hover-shadow {
         margin: 20px 50px;}
     .main-h2{
         margin: 0 40px; }
-    .header-navbar {
+    .navbar {
         width: 100%;
         max-height: 0;
         overflow: hidden; }
-    .header-navbar-menu {
+    .navbar-menu {
         flex-direction: column;
         align-items: center;
         padding: 20px; }
