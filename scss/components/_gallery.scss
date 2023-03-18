@@ -47,13 +47,11 @@
     right: 60px;
     font-size: $ftn-35;
     font-weight: bold;
-}
-  
-.close:hover,
-.close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
+    &:hover, &:focus{
+        color: #999;
+        text-decoration: none;
+        cursor: pointer
+    }
 }
 .mySlides, .mySlides2, .mySlides3, .mySlides4 {
     display: nth($display-form , 3);
@@ -193,9 +191,9 @@ img.hover-shadow {
     display: nth($display-form , 1);
     justify-content: map-get($posicion-content , cent);  
     margin-bottom: $marg-gallery-video;
-}
-.gallery-video iframe{
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+    iframe{
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
 }
 .section-container-text-gallery{
     margin-bottom: $marg-section-container-text-gallery;
@@ -213,9 +211,9 @@ img.hover-shadow {
     cursor: pointer;
     border: none;
     transition: all 0.3s ease;
-}
-.btn-input:hover{
-    color: map-get($posicion-content , alink);
-    background-color: map-get($colores , fontmaincolor);
-    scale: 120%;
+    &:hover{
+        color: map-get($posicion-content , alink);
+        background-color: map-get($colores , fontmaincolor);
+        scale: 120%;
+    }
 }

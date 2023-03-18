@@ -5,9 +5,11 @@
     display: nth($display-form , 1);
     justify-content: map-get($posicion-content , spc-around);
     padding: $pad-main-div;
-}
-.main-div img:hover{
-    scale: 120%;
+    img{
+        &:hover{
+            scale: 120%;
+        }
+    }
 }
     /* SECTION */
 .section{
@@ -42,10 +44,10 @@
     display: nth($display-form , 1);
     align-items: map-get($posicion-content , cent);
     justify-content: map-get($posicion-content , cent);
-}
-.section-text p{
-    color: var(--fontpcolor);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    p{
+        color: map-get($colores , fontpcolor);
+        font-family: $font;
+        font-weight: 400;
+        font-size: $ftn-16;
+    }
 }

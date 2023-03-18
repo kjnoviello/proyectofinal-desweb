@@ -8,34 +8,28 @@
     background-color: map-get($colores , alink);
     margin: $marg-contact-board;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
-}
-.contact-board div{
-    display: nth($display-form , 1);
-    flex-direction: column;
-    width: 90%;
-    justify-content: map-get($posicion-content , cent);
-    align-items: map-get($posicion-content , cent);
-    margin: auto;
-    padding: 10px;
+    div{
+        display: nth($display-form , 1);
+        flex-direction: column;
+        width: 90%;
+        justify-content: map-get($posicion-content , cent);
+        align-items: map-get($posicion-content , cent);
+        margin: auto;
+        padding: 10px;
+    }
 }
 .contact-board-div{
     border-right: 1px solid map-get($colores , fontpcolor);
     border-left: 1px solid map-get($colores , fontpcolor);    
-}
-.contact-board div img{
-    width: 48px;
-    height: 48px;
-    padding: 20px;
-    filter: drop-shadow( 1px 1px 10px map-get($colores , fontpcolor));
 }
 .contact-board-booking{
     list-style: none;
     text-decoration: none;
     color: map-get($colores , shadowcolor);
     transition: all 0.3s ease;
-}
-.contact-board-booking:hover, .contact-board-social div img:hover{
-    scale: 120%;
+    &:hover{
+        scale: 120%;
+    }
 }
 .contact-article-form{
     display: nth($display-form , 1);
@@ -113,14 +107,12 @@
     border: 0;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-#btn{
     color: map-get($colores , alink);
     font-size: $ftn-16;
-}
-#btn:hover {
-    color: map-get($colores , shadowcolor);
-    font-weight: 600;
+    &:hover{
+        color: map-get($colores , shadowcolor);
+        font-weight: 600;
+    }
 }
 .contact-section-text{
     margin: $marg-contact-section-text;

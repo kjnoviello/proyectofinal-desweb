@@ -15,28 +15,30 @@
     max-width: 288px;
     height: 368px;
     transform: translateX(-96px);
-}
-.blog-post__img img {
-    display: nth($display-form , 5);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.blog-post__img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
-    opacity: 0.5;
+    img{
+        display: nth($display-form , 5);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+            opacity: 0.5;
+        }
+    }
 }
 .active2 {
     background-color: map-get($colores , active2);
 }
-.blog-post__date span {
-    display: nth($display-form , 5);
-    color: #8e8c8c;
-    font-weight: 600;
-    margin: 8px 0;
+.blog-post__date{
+    span {
+        display: nth($display-form , 5);
+        color: #8e8c8c;
+        font-weight: 600;
+        margin: 8px 0;
+    }
 }
 .blog-post__title {
     font-size: $ftn-40;
@@ -49,9 +51,11 @@
     display: nth($display-form , 1);
     align-items: map-get($posicion-content , cent);
 }
-.blog-post__info p {
-    color: rgba(0, 0, 0, 0.7);
-}
+.blog-post__info{
+    p {
+        color: rgba(0, 0, 0, 0.7);
+    }
+}   
 #hr-experience{
     margin: $marg_hr;
 }
@@ -98,35 +102,37 @@
     justify-content: map-get($posicion-content , cent);
     align-items: map-get($posicion-content , cent);
 }
-#experience-review>ul.review li:first-child {
-    opacity: 1;
-}
-#experience-review>ul.review li:target {
-    opacity: 1;
+#experience-review>ul.review li{
+    &:first-child {
+        opacity: 1;
+    }
+    &:target {
+        opacity: 1;
+    }
 }
 #experience-review>.menu {
     text-align: map-get($posicion-content , cent);
     margin: 20px;
     padding: 0 5px;
-}
-#experience-review>.menu li {
-    display: nth($display-form , 4);
-    text-align: map-get($posicion-content , cent);
-    padding: 0 5px;
-}
-#experience-review>.menu li a {
-    display: nth($display-form , 4);
-    text-decoration: none;
-    background-color: map-get($colores , footercolorshadow );
-    padding: 10px;
-    width: 3px;
-    height: 3px;
-    font-size: $ftn-20;
-    border-radius: 100%;
-}
-#experience-review>.menu li a:hover{
-    scale: 130%;
-    background-color: map-get($colores , footercolor);
+    li {
+        display: nth($display-form , 4);
+        text-align: map-get($posicion-content , cent);
+        padding: 0 5px;
+        a{
+            display: nth($display-form , 4);
+            text-decoration: none;
+            background-color: map-get($colores , footercolorshadow );
+            padding: 10px;
+            width: 3px;
+            height: 3px;
+            font-size: $ftn-20;
+            border-radius: 100%;
+            &:hover{
+                scale: 130%;
+                background-color: map-get($colores , footercolor);
+            }
+        }
+    }
 }
 .experience-image, .review-image1{
     background-image: url("../assets/Experience/reseña01.jpg");
@@ -143,5 +149,5 @@
     background-image: url("../assets/Experience/reseña03.jpg");
 }
 .checked {
-    color: map-get($colores , orange);
+    color: orange;
 }
