@@ -1,9 +1,17 @@
 // fonts
 $font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font-phce-a: system-ui, sans-serif;
+$font-contact-form: 'Source Sans Pro', sans-serif;
+$ftn-48: 48px;
+$ftn-40: 40px;
+$ftn-35: 35px;
+$ftn-32: 32px;
 $ftn-24: 24px;
 $ftn-20: 20px;
 $ftn-18: 18px;
+$ftn-16: 16px;
 $ftn-14: 14px;
+$ftn-12: 12px;
 
 // padding
 $pad-header: 20px 150px 0 150px;
@@ -11,6 +19,13 @@ $pad-footer: 50px 80px 0 80px;
 $pad-footer-container: 0 30px;
 $pad-footer-bottom: 20px;
 $pad-main-h1: 30px;
+$pad-main-div: 30px 100px;
+$pad-blog-post: 40px;
+$pad-numbertext: 8px 12px;
+$pad-caption-container: 2px 16px;
+$pad-btn-input: 10px;
+$pad-contact-form: 20px;
+
 
 // margin
 $marg-header: 0 auto;
@@ -18,9 +33,17 @@ $marg_hr: 20px 100px;
 $marg-footer-container: auto;
 $marg-footer-title_top-div_hr-divider: 12px 0;
 $marg-section-page: 0 100px;
-
-// gap
-$gap-space: 25px
+$marg-face-span: 56px 0 0;
+$marg-blog-post: 100px;
+$marg-blog-post__title: 24px 0 32px;
+$marg-phce: 30px;
+$marg-gallery-video: 50px;
+$marg-section-container-text-gallery: 40px;
+$marg-contact-board: 100px;
+$marg-contact-article-form-img: 32px;
+$marg-contact-form: 32px;
+$marg-contact-section-text: 0 100px;
+$marg-contact-iframe: 0 30px;
 
 
 // agregar los marg y pad para medias!!!!

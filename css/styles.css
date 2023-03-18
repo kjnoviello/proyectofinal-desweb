@@ -10,10 +10,8 @@ body {
 }
 
 .main-foto {
-  background-repeat: no-repeat;
+  background: no-repeat fixed bottom;
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
   box-shadow: inset 2px 2px 25px #EBEBEB;
   width: 100%;
   height: 470px;
@@ -34,15 +32,15 @@ body {
 
 .main-h2 {
   font-size: 18px;
-  text-align: justify;
 }
 
 .section-page {
   margin: 0 100px;
 }
 
-p {
-  text-indent: 2em;
+p, h2 {
+  text-indent: 32px;
+  text-align: justify;
 }
 
 .header {
@@ -121,7 +119,6 @@ p {
 }
 .footer p {
   font-size: 14px;
-  text-align: justify;
 }
 
 .footer-container {
@@ -162,7 +159,7 @@ p {
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   font-size: 14px;
 }
 
@@ -179,7 +176,7 @@ p {
   position: fixed;
   z-index: 20;
   transition: all 0.3s ease;
-  filter: drop-shadow(3px 3px 4px black);
+  filter: drop-shadow 3px 3px 4px;
 }
 
 .icon-whatsapp {
@@ -303,7 +300,7 @@ p {
 }
 
 .section-divfoto {
-  display: flex;
+  display: fl-start flex-start;
   justify-content: center;
   align-items: center;
 }
@@ -334,7 +331,7 @@ p {
   color: var(--fontpcolor);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .main-foto-services {
@@ -399,7 +396,7 @@ p {
   padding: 0;
   color: #fff;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 .container-exp .card-exp .face.face2 {
@@ -440,17 +437,17 @@ p {
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 2.5rem;
-  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  box-shadow: 0 22px 128px rgba(0, 0, 0, 0.2);
   margin: 100px;
 }
 
 .blog-post__img {
   position: relative;
-  min-width: 20rem;
-  max-width: 18rem;
-  height: 23rem;
-  transform: translateX(-6rem);
+  min-width: 320px;
+  max-width: 288px;
+  height: 368px;
+  transform: translateX(-96px);
 }
 
 .blog-post__img img {
@@ -476,12 +473,12 @@ p {
   display: block;
   color: #8e8c8c;
   font-weight: 600;
-  margin: 0.5rem 0;
+  margin: 8px 0;
 }
 
 .blog-post__title {
-  font-size: 2.5rem;
-  margin: 1.5rem 0 2rem;
+  font-size: 40px;
+  margin: 24px 0 32px;
   text-transform: uppercase;
   color: var(--fontpcolor);
 }
@@ -601,10 +598,6 @@ p {
   background-image: url("../assets/Experience/reseña03.jpg");
 }
 
-.checked {
-  color: orange;
-}
-
 .main-foto-gallery {
   background-image: url("../assets/GSH foto05a.jpg");
 }
@@ -656,7 +649,7 @@ p {
 }
 
 .close {
-  color: white;
+  color: #fff;
   position: absolute;
   top: 50px;
   right: 60px;
@@ -683,7 +676,7 @@ p {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -714,7 +707,7 @@ p {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
-  color: white;
+  color: #fff;
 }
 
 img.demo, img.demo2, img.demo3, img.demo4 {
@@ -752,8 +745,8 @@ img.hover-shadow {
 
 .phce-a {
   font-family: system-ui, sans-serif;
-  font-size: 3rem;
-  color: white;
+  font-size: 48px;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -816,12 +809,12 @@ img.hover-shadow {
 .content {
   display: grid;
   place-items: center;
-  min-height: 16rem;
-  padding: 2rem;
-  border-radius: 1rem;
+  min-height: 256px;
+  padding: 32px;
+  border-radius: 16px;
   font-family: system-ui, sans-serif;
-  font-size: 2rem;
-  color: white;
+  font-size: 32px;
+  color: #fff;
   --bg-overlay: rgb(0 0 0 / .5);
 }
 
@@ -853,17 +846,16 @@ img.hover-shadow {
 
 .btn-input {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   padding: 10px;
   background-color: #606C38;
-  color: white;
+  color: #fff;
   cursor: pointer;
   border: none;
   transition: all 0.3s ease;
 }
 
 .btn-input:hover {
-  color: white;
   background-color: #6e5924;
   scale: 120%;
 }
@@ -922,11 +914,11 @@ img.hover-shadow {
 }
 
 .contact-article-form-img {
-  margin: 2em;
+  margin: 32px;
 }
 
 .contact-form {
-  margin: 2em;
+  margin: 32px;
   background-color: #606C38;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -963,11 +955,11 @@ img.hover-shadow {
 .contact-form > input,
 .contact-form > textarea {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   background: transparent;
   border: 0;
   border-bottom: 1px solid white;
-  color: white;
+  color: #fff;
   padding: 15px 0;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -978,6 +970,7 @@ img.hover-shadow {
 .contact-form > textarea,
 .contact-form > button {
   display: block;
+  resize: none;
 }
 
 ::-webkit-input-placeholder {
@@ -1005,13 +998,13 @@ img.hover-shadow {
   transition: all 0.3s ease;
 }
 
-#btn a {
-  color: white;
-  font-size: 1rem;
+#btn {
+  color: #fff;
+  font-size: 16px;
 }
 
-#btn a:hover {
-  color: #000000;
+#btn:hover {
+  color: black;
   font-weight: 600;
 }
 

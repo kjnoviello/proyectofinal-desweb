@@ -2,23 +2,22 @@
     background-image: url("../assets/GSH\ foto02a.jpg");
 }
 .blog-post {
-    display: flex;
-    align-items: center;
-    // max-width: 90rem;
-    background-color: #fff;
-    padding: 2.5rem;
-    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
-    margin: 100px;
+    display: nth($display-form , 1);
+    align-items: map-get($posicion-content , cent);
+    background-color:map-get($colores , alink);
+    padding: $pad-blog-post;
+    box-shadow: 0 22px 128px rgba(0, 0, 0, 0.2);
+    margin: $marg-blog-post;
 }
 .blog-post__img {
     position: relative;
-    min-width: 20rem;
-    max-width: 18rem;
-    height: 23rem;
-    transform: translateX(-6rem);
+    min-width: 320px;
+    max-width: 288px;
+    height: 368px;
+    transform: translateX(-96px);
 }
 .blog-post__img img {
-    display: block;
+    display: nth($display-form , 5);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -31,30 +30,30 @@
     opacity: 0.5;
 }
 .active2 {
-    background-color: #717171;
+    background-color: map-get($colores , active2);
 }
 .blog-post__date span {
-    display: block;
+    display: nth($display-form , 5);
     color: #8e8c8c;
     font-weight: 600;
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 .blog-post__title {
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
+    font-size: $ftn-40;
+    margin: $marg-blog-post__title;
     text-transform: uppercase;
     color: var(--fontpcolor)
 }
 .blog-post__text{
-        text-align: justify;
-        display: flex;
-        align-items: center;
+    text-align: map-get($posicion-content , just);
+    display: nth($display-form , 1);
+    align-items: map-get($posicion-content , cent);
 }
 .blog-post__info p {
     color: rgba(0, 0, 0, 0.7);
 }
 #hr-experience{
-    margin: 20px 100px;
+    margin: $marg_hr;
 }
 #experience-review {
     font-family: sans-serif;
@@ -83,7 +82,7 @@
     left: 50%;
     top: 100px;
     transform: translate(-50%, -50%);
-    display: flex;
+    display: nth($display-form , 1);
 }
 #experience-review>ul.review li {
     position: absolute;
@@ -94,10 +93,10 @@
     height: inherit;
     transition: opacity .5s;
     background: map-get($colores , backgroundcolor);
-    display: flex;
+    display: nth($display-form , 1);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: map-get($posicion-content , cent);
+    align-items: map-get($posicion-content , cent);
 }
 #experience-review>ul.review li:first-child {
     opacity: 1;
@@ -106,23 +105,23 @@
     opacity: 1;
 }
 #experience-review>.menu {
-    text-align: center;
+    text-align: map-get($posicion-content , cent);
     margin: 20px;
     padding: 0 5px;
 }
 #experience-review>.menu li {
-    display: inline-block;
-    text-align: center;
+    display: nth($display-form , 4);
+    text-align: map-get($posicion-content , cent);
     padding: 0 5px;
 }
 #experience-review>.menu li a {
-    display: inline-block;
+    display: nth($display-form , 4);
     text-decoration: none;
     background-color: map-get($colores , footercolorshadow );
     padding: 10px;
     width: 3px;
     height: 3px;
-    font-size: 20px;
+    font-size: $ftn-20;
     border-radius: 100%;
 }
 #experience-review>.menu li a:hover{
@@ -144,5 +143,5 @@
     background-image: url("../assets/Experience/reseña03.jpg");
 }
 .checked {
-    color: orange;
+    color: map-get($colores , orange);
 }

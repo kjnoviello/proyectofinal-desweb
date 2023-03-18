@@ -1,9 +1,12 @@
 $display-form:
 flex,
 grid,
-none;
+none,
+inline-block,
+block;
 
 $z-eje:
 10,
 20,
-999;
+999,
+99999;

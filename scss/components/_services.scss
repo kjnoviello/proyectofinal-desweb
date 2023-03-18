@@ -2,17 +2,17 @@
     background-image: url("../assets/GSH\ foto04a.jpg");
 }
 .face-span{
-    margin: 56px 0 0;
-    display: inline-block;
+    margin: $marg-face-span;
+    display: nth($display-form , 4);
     text-decoration: none;
     font-weight: 900;
-    color: #333;
+    color: map-get($colores , face-services);
     padding: 5px;
 }
 .container-exp{
-    display: flex;
+    display: nth($display-form , 1);
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: map-get($posicion-content , spc-around);
     column-gap: 100px;
 }
 .container-exp .card-exp{
@@ -26,17 +26,17 @@
 }
 .container-exp .card-exp .face.face1{
     position: relative;
-    background: #333;
-    display: flex;
+    background: map-get($colores , face-services);
+    display: nth($display-form , 1);
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content: map-get($posicion-content, cent);
+    align-items: map-get($posicion-content, cent);
     z-index: 1;
     transform: translateY(60px);
 }
 .container-exp .card-exp:hover .face.face1{
-    background: #606C38;
+    background: map-get($colores , footercolorshadow);
     transform: translateY(0);
 }
 .container-exp .card-exp .face.face1 .content-exp{
@@ -49,16 +49,16 @@
 .container-exp .card-exp .face.face1 .content-exp{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
+    color: map-get($colores , alink);
+    text-align: map-get($posicion-content, cent);
+    font-size: $ftn-24;
 }
 .container-exp .card-exp .face.face2{
     position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: map-get($colores , alink);
+    display: nth($display-form , 1);
+    justify-content: map-get($posicion-content, cent);
+    align-items: map-get($posicion-content, cent);
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
@@ -72,10 +72,10 @@
     padding: 0;
 }
 .container-exp .card-exp .face.face2 .content-exp a{
-    margin: 56px 0 0;
-    display:  inline-block;
+    margin: $marg-face-span;
+    display: nth($display-form , 4);
     text-decoration: none;
     font-weight: 900;
-    color: #333;
+    color: map-get($colores , face-services);
     padding: 5px;
 }

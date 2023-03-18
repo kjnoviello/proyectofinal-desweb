@@ -2,19 +2,19 @@
     background-image: url("../assets/GSH\ foto03a.jpg");
 }
 .contact-board{
-    display: flex;
+    display: nth($display-form, 1);
     flex-direction: row;
     height: auto;
-    background-color: #fff;
-    margin: 100px;
+    background-color: map-get($colores , alink);
+    margin: $marg-contact-board;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
 }
 .contact-board div{
-    display: flex;
+    display: nth($display-form , 1);
     flex-direction: column;
     width: 90%;
-    justify-content: center;
-    align-items: center;
+    justify-content: map-get($posicion-content , cent);
+    align-items: map-get($posicion-content , cent);
     margin: auto;
     padding: 10px;
 }
@@ -31,25 +31,25 @@
 .contact-board-booking{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: map-get($colores , shadowcolor);
     transition: all 0.3s ease;
 }
 .contact-board-booking:hover, .contact-board-social div img:hover{
     scale: 120%;
 }
 .contact-article-form{
-    display: flex;
+    display: nth($display-form , 1);
     flex-direction: row;
-    justify-content: center;
+    justify-content: map-get($posicion-content , cent);
     width: 100%; 
 }
 .contact-article-form-img{
-    margin: 2em;
+    margin: $marg-contact-article-form-img;
 }
 .contact-form{
-    margin: 2em;
+    margin: $marg-contact-form;
     background-color: map-get($colores , footercolorshadow);
-    display: grid;
+    display: nth($display-form , 2);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
@@ -60,7 +60,7 @@
     "comment comment"
     "comment comment"
     ". btn" ;
-    padding: 20px;
+    padding: $pad-contact-form;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
 }
 .form-name{
@@ -83,12 +83,12 @@
 }
 .contact-form>input,
 .contact-form>textarea {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
+    font-family: $font-contact-form;
+    font-size: $ftn-16;
     background: transparent;
     border: 0;
     border-bottom: 1px solid white;
-    color: white;
+    color: map-get($colores , alink);
     padding: 15px 0;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -97,7 +97,8 @@
 .contact-form>input,
 .contact-form>textarea,
 .contact-form>button {
-    display: block;
+    display: nth($display-form , 5);
+    resize: none;
 }
 ::-webkit-input-placeholder { color: white; }
 :-ms-input-placeholder { color: white; }
@@ -113,18 +114,18 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-#btn a{
-    color: white;
-    font-size: 1rem;
+#btn{
+    color: map-get($colores , alink);
+    font-size: $ftn-16;
 }
-#btn a:hover {
-    color: #000000;
+#btn:hover {
+    color: map-get($colores , shadowcolor);
     font-weight: 600;
 }
 .contact-section-text{
-    margin: 0 100px;
+    margin: $marg-contact-section-text;
 }
 .contact-iframe{
-    margin: 0 30px;
+    margin: $marg-contact-iframe;
     box-shadow: 0 20px 50px rgb(0 0 0 / 80%);
 }

@@ -5,7 +5,6 @@
     color: map-get($colores , backgroundcolor);
     p{
         font-size: $ftn-14;
-        text-align: justify;
     }
 }
 .footer-container{
@@ -41,7 +40,7 @@
 .footer-list{
     display: nth($display-form , 1);
     flex-direction: column;
-    gap: $gap-space;
+    gap: 20px;
     font-size: $ftn-14;
 }
 .footer-list-item{

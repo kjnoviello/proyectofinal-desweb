@@ -1,8 +1,8 @@
 .icon{
     position: fixed;
-    z-index: 20;
+    z-index: nth($z-eje , 2);
     transition: all 0.3s ease;
-    filter: drop-shadow(3px 3px 4px black);
+    filter: drop-shadow (3px 3px 4px map-get($colores , black));
 }
 .icon-whatsapp{
     bottom: 28px;

@@ -1,7 +1,7 @@
 .navbar-menu{
     list-style: none;
     display: nth($display-form , 1);
-    gap: $gap-space;
+    gap: 25px;
     li{
         transition: all 0.5s ease;
         &:hover{
