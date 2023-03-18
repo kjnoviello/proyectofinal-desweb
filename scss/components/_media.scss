@@ -11,17 +11,17 @@
         overflow: hidden; }
     .navbar-menu {
         flex-direction: column;
-        align-items: center;
+        align-items: map-get($posicion-content, cent);
         padding: 20px; }
     .header label {
         display: inline-flex;
-        align-items: center;
+        align-items: map-get($posicion-content, cent);
         cursor: pointer; }
     #toggler:checked ~ .navbar {
         max-height: 100%; }
     .gallery-article{
         flex-direction: column;
-        align-items: center; }
+        align-items: map-get($posicion-content, cent); }
 }
 @media (min-width:768px) and (max-width: 992px){
     .section{
@@ -29,12 +29,12 @@
         grid-template-rows: 4fr;
         row-gap: 0px; }
     .blog-post {
-        max-width: 70rem;
+        max-width: 1120px;
         margin: 100px;
-        padding: 1.5rem;}
+        padding: 24px;}
     .blog-post__img {
-        min-width: 16rem;
-        max-width: 18rem;}
+        min-width: 256px;
+        max-width: 288px;}
     .section-page{
         margin: 0 40px;}
     .contact-board{
@@ -43,7 +43,7 @@
         margin: 0 40px; }
     .contact-article-form{
         flex-direction: column;
-        align-items: center; }
+        align-items: map-get($posicion-content, cent); }
 }
 @media (max-width:768px) {
     .section{
@@ -53,36 +53,36 @@
     .container-exp{
         column-gap: 50px; }
     .blog-post {
-        padding: 2.5rem;
+        padding: 40px;
         flex-direction: column;
-        max-width:600px;  }  
+        max-width: 600px;  }  
     .blog-post__img {
-        min-width: 24rem;
-        max-width: 24rem;
-        transform: translate(0, -5rem); }
+        min-width: 384px;
+        max-width: 384px;
+        transform: translate(0, -80px); }
     .contact-article-form{
         flex-direction: column;
-        align-items: center; }
+        align-items: map-get($posicion-content, cent); }
     .section-page{
         margin: 0 40px;}
     .footer-top{
-        justify-items: center;
+        justify-items: map-get($posicion-content, cent);
         margin-bottom: 30px; }
     .footer-list-item{
-        text-align: center; } 
+        text-align: map-get($posicion-content, cent); } 
     .contact-board{
         flex-direction: column;
         margin:40px; }
     .contact-section-text{
         margin: 0 40px; }
     .contact-board-div{
-        border-top: 1px solid var(--fontpcolor);
-        border-bottom: 1px solid var(--fontpcolor); 
+        border-top: 1px solid map-get($colores , fontpcolor);
+        border-bottom: 1px solid map-get($colores , fontpcolor); 
         border-left: 0;
         border-right: 0; }
     .iconos-s{
-        display: flex;
-        justify-content: center;
+        display: nth($display-form , 1);
+        justify-content: map-get($posicion-content, cent);
         gap: 25px;
         margin-top: 10px; }
     .icon{
@@ -113,11 +113,11 @@
         padding: 50px 20px 0 20px; }
     .blog-post{
         margin: 130px 20px;
-        padding: 0.5rem; }
+        padding: 8px; }
     .btn-input{
         margin-bottom: 0; }
     .main-div{
         gap: 15px; }
     #br{
-        display: none; }     
+        display: nth($posicion-content , 3); }     
 }
