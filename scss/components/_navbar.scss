@@ -1,0 +1,25 @@
+.navbar-menu{
+    list-style: none;
+    display: nth($display-form , 1);
+    gap: $gap-space;
+    li{
+        transition: all 0.5s ease;
+        &:hover{
+            scale: 120%;
+        }
+        a{
+            text-decoration: none;
+            text-shadow: 1px 1px 3px map-get($colores , backgroundcolor), 5px 5px 15px, 5px 5px 8px map-get($colores , backgroundcolor), -1px -1px 3px map-get($colores , backgroundcolor), -5px -5px 8px map-get($colores , backgroundcolor);
+            cursor: pointer;
+            font-size: $ftn-24;
+            font-family: $font;
+            color: map-get($colores , fontmaincolor);
+            font-style: italic;
+            font-weight: 600;
+        }
+    }
+}
+#toggler, .header label{
+    display: nth($display-form , 3);
+}
+

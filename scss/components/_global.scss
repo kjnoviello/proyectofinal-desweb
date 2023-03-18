@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: nth($colores , 5);    
+}
+.main-foto{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    box-shadow: inset 2px 2px 25px map-get($colores , backgroundcolor);
+    width: 100%;
+    height: 470px;
+    margin: 30px 0;
+}
+.main-h{
+    color: map-get($colores , fontpcolor);
+    font-family: $font;
+}
+.main-h1{
+    text-align: map-get($posicion-content , cent);
+    padding: $pad-main-h1;
+    font-style: italic;
+    text-shadow: 2px 2px 5px map-get($colores , fontpcolor);
+}
+.main-h2{
+    font-size: $ftn-18;
+    text-align: map-get($posicion-content , just);
+}
+.section-page{
+    margin: $marg-section-page;
+}
+p{
+    text-indent: 2em;
+}

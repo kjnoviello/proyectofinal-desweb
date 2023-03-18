@@ -1,0 +1,53 @@
+.footer{
+    padding: $pad-footer;
+    background-color: map-get($colores , footercolor);
+    box-shadow: 2px -5px 40px map-get($colores , footercolorshadow);
+    color: map-get($colores , backgroundcolor);
+    p{
+        font-size: $ftn-14;
+        text-align: justify;
+    }
+}
+.footer-container{
+    margin: $marg-footer-container;
+    padding: $pad-footer-container;
+    overflow: auto;
+}
+.footer-top{
+    display: nth($display-form , 2);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.footer-top-div{
+    display: nth($display-form , 1);
+    flex-direction: column;
+    align-items: map-get($posicion-content , cent);
+    width: 300px;
+    margin: $marg-footer-title_top-div_hr-divider;
+}
+.footer-title{
+    font-size: $ftn-20;
+    color: map-get($colores , alink);
+    font-weight: 500;
+    margin: $marg-footer-title_top-div_hr-divider;
+}
+.footer-logo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 150px;
+    filter: drop-shadow(3px 3px 4px map-get($colores , shadowcolor));
+    filter: invert(100%);
+}
+.footer-list{
+    display: nth($display-form , 1);
+    flex-direction: column;
+    gap: $gap-space;
+    font-size: $ftn-14;
+}
+.footer-list-item{
+    list-style: none;
+    font-size: $ftn-14;
+}
+.footer-bottom{
+    padding-bottom: $pad-footer-bottom;
+}

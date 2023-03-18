@@ -1,0 +1,25 @@
+.icon{
+    position: fixed;
+    z-index: 20;
+    transition: all 0.3s ease;
+    filter: drop-shadow(3px 3px 4px black);
+}
+.icon-whatsapp{
+    bottom: 28px;
+    right: 15px;
+}
+.icon-instagram{
+    bottom: 130px;
+    right: 15px;
+}
+.icon-facebook{
+    bottom: 232px;
+    right: 15px;
+}
+.icon-linkedin{
+    bottom: 334px;
+    right: 15px;
+}
+.icon-whatsapp:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-facebook:hover{
+    scale: 130%;
+}

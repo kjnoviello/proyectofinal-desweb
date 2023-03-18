@@ -30,9 +30,10 @@
 <!-- CUERPO PRINCIPAL DE LA PAGINA -->
     <main>
         <figure class="main-foto main-foto-gallery"></figure>
-        <h1 class="main-h main-h1">Take a look at our photo gallery</h1>
+        <h1 class="main-h main-h1 section-page">Take a look at our photo gallery</h1>
         <br>
-        <h2 class="main-h main-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis culpa accusamus illum, quidem repellendus molestiae vitae qui consequatur sint eos voluptate non reprehenderit labore alias vero mollitia. Doloremque, fuga!Loremlorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga aspernatur nam maxime ad, debitis facere minus esse expedita aut minima laboriosam sunt, sit quisquam labore, incidunt excepturi eum nemo!
+        <h2 class="main-h main-h2 section-page">A gallery of photos of the Grand Scauriza Hotel showcases the beauty and luxury of this exceptional property. The hotel's interiors are just as impressive as its exterior, with beautifully appointed public spaces, stylish furnishings, and eye-catching artwork that reflect the hotel's commitment to luxury and elegance. Many of the rooms and public spaces at the hotel offer stunning views of the city, the mountains, or the ocean, providing a breathtaking backdrop for your stay.The rooftop pool and bar is a highlight of the hotel, with a stunning infinity pool, plenty of lounge chairs, and a bar that serves up delicious cocktails and small bites.
+
         </h2>
         <section class="section-page">
             <!-- BEDROOM LIGHTBOX -->
@@ -62,7 +63,7 @@
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     <div class="caption-container">
-                        <p id="caption"></p>
+                        <span id="caption"></span>
                      </div>
                     <div class="column">
                         <img class="demo cursor" src="../assets/gallery/bedrooms/room01_100x439.jpg" style="width:100%" onclick="currentSlide(1)" alt="Desire Room With Open View">
@@ -108,7 +109,7 @@
                     <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides2(1)">&#10095;</a>
                     <div class="caption-container">
-                        <p id="caption2"></p>
+                        <span id="caption2"></span>
                      </div>
                     <div class="column">
                         <img class="demo2 cursor" src="../assets/gallery/Garden/garden01_480x550.jpg" style="width:100%" onclick="currentSlide2(1)" alt="Spring On Our Conservatory">
@@ -154,7 +155,7 @@
                     <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides3(1)">&#10095;</a>
                     <div class="caption-container">
-                        <p id="caption3"></p>
+                        <span id="caption3"></span>
                      </div>
                     <div class="column">
                         <img class="demo3 cursor" src="../assets/gallery/Pool/pool01.jpg" style="width:100%" onclick="currentSlide3(1)" alt="Pool View">
@@ -200,7 +201,7 @@
                     <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides4(1)">&#10095;</a>
                     <div class="caption-container">
-                        <p id="caption4"></p>
+                        <span id="caption4"></span>
                      </div>
                     <div class="column">
                         <img class="demo4 cursor" src="../assets/gallery/facilities/fac01_640x427.jpg" style="width:100%" onclick="currentSlide4(1)" alt="Conference Room Numer One">
@@ -222,22 +223,22 @@
         <article class="gallery-cards">
                 <div class="phce card card-1">
                     <div class="content">
-                        <p class="phce-a hover-shadow cursor" onclick="openModal();currentSlide(1)" >Bedrooms</p>
+                        <span class="phce-a hover-shadow cursor" onclick="openModal();currentSlide(1)" >Bedrooms</span>
                     </div>
                 </div>
                 <div class="phce card card-2">
                     <div class="content">
-                        <p class="phce-a hover-shadow cursor" onclick="openModal2();currentSlide(1)" >Garden</p>
+                        <span class="phce-a hover-shadow cursor" onclick="openModal2();currentSlide(1)" >Garden</span>
                     </div>
                 </div>
                 <div class="phce card card-3">
                     <div class="content">
-                        <p class="phce-a hover-shadow cursor" onclick="openModal3();currentSlide(1)" >Pools</p>
+                        <span class="phce-a hover-shadow cursor" onclick="openModal3();currentSlide(1)" >Pools</span>
                     </div>
                 </div>
                 <div class="phce card card-4">
                     <div class="content">
-                        <p class="phce-a hover-shadow cursor" onclick="openModal4();currentSlide(1)" >Facilities</p>
+                        <span class="phce-a hover-shadow cursor" onclick="openModal4();currentSlide(1)" >Facilities</span>
                     </div>
                 </div>
             </article>
@@ -253,7 +254,7 @@
                 </div>
                 <div class="section-container-text section-container-text-gallery">
                     <div class="section-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis veniam praesentium repudiandae, possimus suscipit saepe dolores ipsam? Consectetur tenetur magni sapiente, alias laborum asperiores quo aut perspiciatis hic odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, dolorum amet? Non earum accusamus ullam impedit corporis dicta, laudantium harum!</p>
+                        <p>Overall, a photo gallery of the Grand Scauriza Hotel captures the essence of this exceptional property, showing hotel's luxurious amenities, stylish decor, and stunning surroundings, giving guests a glimpse into the experience that awaits them during their stay and commitment to exceptional service.</p>
                     </div>
                     <div class="btn">
                         <a href="https://www.youtube.com/@Hotelesentvcom" target="_blank" rel="noopener"><input class="btn-input" type="button" value="View more"></a>
@@ -270,7 +271,7 @@
             </div>
             <div class="footer-top">
                 <div class="footer-top-div">
-                    <p><i>"Best place for relax"</i></p>
+                    <q><i>Best place for relax</i></q>
                     <div>
                         <img src="../assets/logofooter.svg" class="footer-logo" alt="logo Grand Scauriza Hotel footer">
                     </div>
@@ -291,7 +292,7 @@
                         <a href="https://wa.me/3416851106" rel="noopener noreferrer" target="_blank"><img src="https://img.icons8.com/color/60/null/whatsapp--v1.png" alt="icono de whatsapp" class="icon icon-whatsapp fade-in-right" alt="whatsapp icon"/></a>
                     </div>
                     <h6 class="footer-title">Legals</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eaque quis error soluta ducimus velit nobis perspiciatis aliquid, reprehenderit repellendus?</p>
+                    <p>"Liability disclaimer: The Grand Scauriza Hotel shall not be liable for any loss, damage, or injury incurred by guests during their stay, including but not limited to theft, injury, illness, or damage to personal property. The hotel shall not be responsible for any inconvenience or disappointment caused by unforeseen circumstances beyond our control, such as weather, natural disasters, or flight cancellations. Guests are advised to take out their own travel insurance to cover any such incidents."</p>
                 </div>                
             </div>
             <hr class="hr-divider">

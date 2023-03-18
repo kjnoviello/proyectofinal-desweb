@@ -1,0 +1,13 @@
+#hr{
+    border-style: solid;
+    height: 2px;
+    margin: $marg_hr;
+    background-color: map-get($colores , footercolorshadow);
+    color: map-get($colores , footercolorshadow);
+    box-shadow: 3px 3px 10px map-get($colores , footercolorshadow);
+}
+.hr-divider{
+    margin: $marg-footer-title_top-div_hr-divider;
+    border: none;
+    border-top: 2px solid rgba(252, 255, 255, .1);
+}

@@ -1,0 +1,130 @@
+.main-foto-contact{
+    background-image: url("../assets/GSH\ foto03a.jpg");
+}
+.contact-board{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: #fff;
+    margin: 100px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+}
+.contact-board div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+.contact-board-div{
+    border-right: 1px solid map-get($colores , fontpcolor);
+    border-left: 1px solid map-get($colores , fontpcolor);    
+}
+.contact-board div img{
+    width: 48px;
+    height: 48px;
+    padding: 20px;
+    filter: drop-shadow( 1px 1px 10px map-get($colores , fontpcolor));
+}
+.contact-board-booking{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.contact-board-booking:hover, .contact-board-social div img:hover{
+    scale: 120%;
+}
+.contact-article-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+}
+.contact-article-form-img{
+    margin: 2em;
+}
+.contact-form{
+    margin: 2em;
+    background-color: map-get($colores , footercolorshadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    "name last-name"
+    "email email"
+    "telephone telephone"
+    "comment comment"
+    "comment comment"
+    "comment comment"
+    ". btn" ;
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+}
+.form-name{
+    grid-area: name;
+}
+.form-last-name{
+    grid-area: last-name;
+}
+.form-email{
+    grid-area: email;
+}
+.form-telephone{
+    grid-area: telephone;
+}
+.form-comment{
+    grid-area: comment;
+}
+.form-btn{
+    grid-area: btn;
+}
+.contact-form>input,
+.contact-form>textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 15px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.contact-form>input,
+.contact-form>textarea,
+.contact-form>button {
+    display: block;
+}
+::-webkit-input-placeholder { color: white; }
+:-ms-input-placeholder { color: white; }
+::placeholder { color: white; }
+#textarea {
+    margin-bottom: 30px
+}
+#btn{
+    margin-right: 0; 
+    margin-left: auto;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn a{
+    color: white;
+    font-size: 1rem;
+}
+#btn a:hover {
+    color: #000000;
+    font-weight: 600;
+}
+.contact-section-text{
+    margin: 0 100px;
+}
+.contact-iframe{
+    margin: 0 30px;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 80%);
+}
