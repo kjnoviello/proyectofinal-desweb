@@ -1,0 +1,7 @@
+@mixin icon-position ($p-bottom){
+    bottom: $p-bottom;
+}
+@mixin pad-marg ($pad, $marg){
+    padding: $pad;
+    margin: $marg;
+}

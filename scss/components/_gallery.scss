@@ -1,5 +1,6 @@
 .main-foto-gallery{
     background-image: url("../assets/GSH\ foto05a.jpg");
+    @extend %ex-main-foto;
 }
 /* lightboxs */
 .row > .column {
@@ -29,8 +30,7 @@
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: auto;
-    padding: 0;
+    @include pad-marg(0, auto);
     width: 90%;
     max-width: 1100px;
 }
@@ -214,6 +214,6 @@ img.hover-shadow {
     &:hover{
         color: map-get($posicion-content , alink);
         background-color: map-get($colores , fontmaincolor);
-        scale: 120%;
+        scale: $scl-120;
     }
 }

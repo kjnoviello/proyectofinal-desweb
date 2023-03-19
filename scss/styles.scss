@@ -1,7 +1,9 @@
 @import './base/variables';
 @import './base/lists';
 @import './base/maps';
+@import './base/extend';
 @import './components/global';
+@import './base/mixin';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import './components/header';
 @import './components/navbar';

@@ -1,5 +1,6 @@
 .main-foto-home{
     background-image: url("../assets/GSH\ foto01.jpg");
+    @extend %ex-main-foto;    
 }
 .main-div{
     display: nth($display-form , 1);
@@ -7,7 +8,7 @@
     padding: $pad-main-div;
     img{
         &:hover{
-            scale: 120%;
+            scale: $scl-120;
         }
     }
 }

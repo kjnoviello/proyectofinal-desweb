@@ -1,39 +1,39 @@
 .main-foto-services{
     background-image: url("../assets/GSH\ foto04a.jpg");
+    @extend %ex-main-foto;
 }
 .face-span{
-    margin: $marg-face-span;
+    @include pad-marg(5px, $marg-face-span);
     display: nth($display-form , 4);
     text-decoration: none;
     font-weight: 900;
     color: map-get($colores , face-services);
-    padding: 5px;
 }
 .container-exp{
-    display: nth($display-form , 1);
-    flex-wrap: wrap;
-    justify-content: map-get($posicion-content , spc-around);
-    column-gap: 100px;
+display: nth($display-form , 1);
+flex-wrap: wrap;
+justify-content: map-get($posicion-content , spc-around);
+column-gap: 100px;
 }
 .container-exp .card-exp{
-    position: relative;
-    cursor: pointer;
+position: relative;
+cursor: pointer;
 }
 .container-exp .card-exp .face{
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
+width: 300px;
+height: 200px;
+transition: 0.5s;
 }
 .container-exp .card-exp .face.face1{
-    position: relative;
-    background: map-get($colores , face-services);
-    display: nth($display-form , 1);
-    flex-direction: column;
-    gap: 10px;
-    justify-content: map-get($posicion-content, cent);
-    align-items: map-get($posicion-content, cent);
-    z-index: 1;
-    transform: translateY(60px);
+position: relative;
+background: map-get($colores , face-services);
+display: nth($display-form , 1);
+flex-direction: column;
+gap: 10px;
+justify-content: map-get($posicion-content, cent);
+align-items: map-get($posicion-content, cent);
+z-index: 1;
+transform: translateY(60px);
 }
 .container-exp .card-exp:hover .face.face1{
     background: map-get($colores , footercolorshadow);
@@ -47,8 +47,7 @@
     opacity: 1;
 }
 .container-exp .card-exp .face.face1 .content-exp{
-    margin: 10px 0 0;
-    padding: 0;
+    @include pad-marg(0, 10px 0 0);
     color: map-get($colores , alink);
     text-align: map-get($posicion-content, cent);
     font-size: $ftn-24;
@@ -68,14 +67,12 @@
     transform: translateY(0);
 }
 .container-exp .card-exp .face.face2 .content-exp p{
-    margin: 0;
-    padding: 0;
+    @include pad-marg(0, 0);
 }
 .container-exp .card-exp .face.face2 .content-exp a{
-    margin: $marg-face-span;
     display: nth($display-form , 4);
     text-decoration: none;
     font-weight: 900;
     color: map-get($colores , face-services);
-    padding: 5px;
+    @include pad-marg(5px, $marg-face-span);
 }

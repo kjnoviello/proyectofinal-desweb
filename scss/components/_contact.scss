@@ -1,5 +1,6 @@
 .main-foto-contact{
     background-image: url("../assets/GSH\ foto03a.jpg");
+    @extend %ex-main-foto;
 }
 .contact-board{
     display: nth($display-form, 1);
@@ -14,8 +15,7 @@
         width: 90%;
         justify-content: map-get($posicion-content , cent);
         align-items: map-get($posicion-content , cent);
-        margin: auto;
-        padding: 10px;
+        @include pad-marg(10px, auto);
     }
 }
 .contact-board-div{
@@ -28,7 +28,7 @@
     color: map-get($colores , shadowcolor);
     transition: all 0.3s ease;
     &:hover{
-        scale: 120%;
+        scale: $scl-120;
     }
 }
 .contact-article-form{
@@ -83,9 +83,7 @@
     border: 0;
     border-bottom: 1px solid white;
     color: map-get($colores , alink);
-    padding: 15px 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include pad-marg($pad-input, $marg-input);
     width: 100%;
 }
 .contact-form>input,

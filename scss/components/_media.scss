@@ -30,8 +30,7 @@
         row-gap: 0px; }
     .blog-post {
         max-width: 1120px;
-        margin: 100px;
-        padding: 24px;}
+        @include pad-marg(24px, 100px); }
     .blog-post__img {
         min-width: 256px;
         max-width: 288px;}
@@ -85,8 +84,8 @@
         justify-content: map-get($posicion-content, cent);
         gap: 25px;
         margin-top: 10px; }
-    .icon{
-        position:initial; }
+    .icon-linkedin, .icon-facebook, .icon-instagram, .icon-whatsapp {
+        position: initial; }
     .contact-iframe-p{
         display: none; }
     .contact-iframe{
@@ -112,8 +111,7 @@
     .footer{
         padding: 50px 20px 0 20px; }
     .blog-post{
-        margin: 130px 20px;
-        padding: 8px; }
+        @include pad-marg(8px, 130px 20px); }
     .btn-input{
         margin-bottom: 0; }
     .main-div{

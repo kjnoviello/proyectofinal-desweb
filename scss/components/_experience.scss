@@ -1,5 +1,6 @@
 .main-foto-experience{
     background-image: url("../assets/GSH\ foto02a.jpg");
+    @extend %ex-main-foto;
 }
 .blog-post {
     display: nth($display-form , 1);
@@ -61,17 +62,15 @@
 }
 #experience-review {
     font-family: sans-serif;
-    margin: auto;
     background-image: linear-gradient(to bottom, #606c38, #9f8061, #c49e9b, #d4c4cd, #ebebeb);
     max-width: 800px;
     width: 100%;
-    padding: 30px;
     box-sizing: border-box;
+    @include pad-marg(30px, auto);
 }
 #experience-review>ul, li {
-    padding: 0;
-    margin: 0;
     list-style: none;
+    @include pad-marg(0, 0)
 }
 #experience-review>ul.review {
     position: relative;
@@ -112,8 +111,7 @@
 }
 #experience-review>.menu {
     text-align: map-get($posicion-content , cent);
-    margin: 20px;
-    padding: 0 5px;
+    @include pad-marg(0 5px, 20px);
     li {
         display: nth($display-form , 4);
         text-align: map-get($posicion-content , cent);
@@ -128,7 +126,7 @@
             font-size: $ftn-20;
             border-radius: 100%;
             &:hover{
-                scale: 130%;
+                scale: $scl-130;
                 background-color: map-get($colores , footercolor);
             }
         }

@@ -3,13 +3,12 @@
     flex-wrap: wrap;
     align-items: map-get($posicion-content , cent);
     justify-content: map-get($posicion-content , spc-between);
-    padding: $pad-header;
     position: sticky;
     top: 0;
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     z-index: nth($z-eje , 1);
-    margin: $marg-header;
+    @include pad-marg($pad-header, $marg-header);
     a {
         text-decoration: none;
         color: map-get($colores , alink);

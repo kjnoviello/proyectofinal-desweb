@@ -1,15 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+.icon-linkedin, .icon-facebook, .icon-instagram, .icon-whatsapp {
+  position: fixed;
+  right: 15px;
+  z-index: 20;
+  transition: all 0.3s ease;
+  filter: drop-shadow(3px 3px 4px black);
+}
+.icon-linkedin:hover, .icon-facebook:hover, .icon-instagram:hover, .icon-whatsapp:hover {
+  scale: 130%;
 }
 
-body {
-  background-color: backgroundcolor #EBEBEB;
-}
-
-.main-foto {
+.main-foto-contact, .main-foto-gallery, .main-foto-experience, .main-foto-services, .main-foto-home {
   background: no-repeat fixed bottom;
   background-size: cover;
   box-shadow: inset 2px 2px 25px #EBEBEB;
@@ -18,9 +20,18 @@ body {
   margin: 30px 0;
 }
 
-.main-h {
+.main-h2, .main-h1 {
   color: #353535;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: backgroundcolor #EBEBEB;
 }
 
 .main-h1 {
@@ -48,12 +59,12 @@ p, h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 150px 0 150px;
   position: sticky;
   top: 0;
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   z-index: 10;
+  padding: 20px 150px 0 150px;
   margin: 0 auto;
 }
 .header a {
@@ -122,9 +133,9 @@ p, h2 {
 }
 
 .footer-container {
-  margin: auto;
-  padding: 0 30px;
   overflow: auto;
+  padding: 0 30px;
+  margin: auto;
 }
 
 .footer-top {
@@ -172,35 +183,20 @@ p, h2 {
   padding-bottom: 20px;
 }
 
-.icon {
-  position: fixed;
-  z-index: 20;
-  transition: all 0.3s ease;
-  filter: drop-shadow 3px 3px 4px;
-}
-
 .icon-whatsapp {
   bottom: 28px;
-  right: 15px;
 }
 
 .icon-instagram {
   bottom: 130px;
-  right: 15px;
 }
 
 .icon-facebook {
   bottom: 232px;
-  right: 15px;
 }
 
 .icon-linkedin {
   bottom: 334px;
-  right: 15px;
-}
-
-.icon-whatsapp:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-facebook:hover {
-  scale: 130%;
 }
 
 .tracking-in-expand {
@@ -337,12 +333,12 @@ p, h2 {
 }
 
 .face-span {
+  padding: 5px;
   margin: 56px 0 0;
   display: inline-block;
   text-decoration: none;
   font-weight: 900;
   color: #333;
-  padding: 5px;
 }
 
 .container-exp {
@@ -390,8 +386,8 @@ p, h2 {
 }
 
 .container-exp .card-exp .face.face1 .content-exp {
-  margin: 10px 0 0;
   padding: 0;
+  margin: 10px 0 0;
   color: #fff;
   text-align: center;
   font-size: 24px;
@@ -414,17 +410,17 @@ p, h2 {
 }
 
 .container-exp .card-exp .face.face2 .content-exp p {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .container-exp .card-exp .face.face2 .content-exp a {
-  margin: 56px 0 0;
   display: inline-block;
   text-decoration: none;
   font-weight: 900;
   color: #333;
   padding: 5px;
+  margin: 56px 0 0;
 }
 
 .main-foto-experience {
@@ -495,18 +491,18 @@ p, h2 {
 
 #experience-review {
   font-family: sans-serif;
-  margin: auto;
   background-image: linear-gradient(to bottom, #606c38, #9f8061, #c49e9b, #d4c4cd, #ebebeb);
   max-width: 800px;
   width: 100%;
-  padding: 30px;
   box-sizing: border-box;
+  padding: 30px;
+  margin: auto;
 }
 
 #experience-review > ul, li {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 #experience-review > ul.review {
@@ -550,8 +546,8 @@ p, h2 {
 
 #experience-review > .menu {
   text-align: center;
-  margin: 20px;
   padding: 0 5px;
+  margin: 20px;
 }
 #experience-review > .menu li {
   display: inline-block;
@@ -630,8 +626,8 @@ p, h2 {
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  margin: auto;
   padding: 0;
+  margin: auto;
   width: 90%;
   max-width: 1100px;
 }
@@ -870,8 +866,8 @@ img.hover-shadow {
   width: 90%;
   justify-content: center;
   align-items: center;
-  margin: auto;
   padding: 10px;
+  margin: auto;
 }
 
 .contact-board-div {
@@ -943,9 +939,8 @@ img.hover-shadow {
   border: 0;
   border-bottom: 1px solid white;
   color: #fff;
-  padding: 15px 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding: 10px 0;
+  margin: 10px 0;
   width: 100%;
 }
 
@@ -1037,8 +1032,8 @@ img.hover-shadow {
   }
   .blog-post {
     max-width: 1120px;
-    margin: 100px;
     padding: 24px;
+    margin: 100px;
   }
   .blog-post__img {
     min-width: 256px;
@@ -1110,7 +1105,7 @@ img.hover-shadow {
     gap: 25px;
     margin-top: 10px;
   }
-  .icon {
+  .icon-linkedin, .icon-facebook, .icon-instagram, .icon-whatsapp {
     position: initial;
   }
   .contact-iframe-p {
@@ -1148,8 +1143,8 @@ img.hover-shadow {
     padding: 50px 20px 0 20px;
   }
   .blog-post {
-    margin: 130px 20px;
     padding: 8px;
+    margin: 130px 20px;
   }
   .btn-input {
     margin-bottom: 0;

@@ -1,25 +1,20 @@
-.icon{
-    position: fixed;
-    z-index: nth($z-eje , 2);
-    transition: all 0.3s ease;
-    filter: drop-shadow (3px 3px 4px map-get($colores , black));
-}
 .icon-whatsapp{
-    bottom: 28px;
-    right: 15px;
+    // bottom: 28px;
+    @extend %ex-icon;
+    @include icon-position (28px);
 }
 .icon-instagram{
-    bottom: 130px;
-    right: 15px;
+    // bottom: 130px;
+    @extend %ex-icon;
+    @include icon-position (130px);
 }
 .icon-facebook{
-    bottom: 232px;
-    right: 15px;
+    // bottom: 232px;
+    @extend %ex-icon;
+    @include icon-position (232px);
 }
 .icon-linkedin{
-    bottom: 334px;
-    right: 15px;
-}
-.icon-whatsapp:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-facebook:hover{
-    scale: 130%;
+    // bottom: 334px;
+    @extend %ex-icon;
+    @include icon-position (334px);
 }

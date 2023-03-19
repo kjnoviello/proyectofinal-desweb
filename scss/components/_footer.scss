@@ -8,9 +8,8 @@
     }
 }
 .footer-container{
-    margin: $marg-footer-container;
-    padding: $pad-footer-container;
     overflow: auto;
+    @include pad-marg ($pad-footer-container, $marg-footer-container)
 }
 .footer-top{
     display: nth($display-form , 2);
