@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-/* GLOBAL */
 .icon-linkedin, .icon-facebook, .icon-instagram, .icon-whatsapp {
   position: fixed;
   right: 15px;
@@ -54,7 +53,7 @@ p, h2 {
   text-indent: 32px;
   text-align: justify;
 }
-/* HEADER */
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +80,7 @@ p, h2 {
 #header-logo-xs {
   display: none;
 }
-/* NAV */
+
 .navbar-menu {
   list-style: none;
   display: flex;
@@ -116,13 +115,13 @@ p, h2 {
   color: #606C38;
   box-shadow: 3px 3px 10px #606C38;
 }
-/* HR */
+
 .hr-divider {
   margin: 12px 0;
   border: none;
   border-top: 2px solid rgba(252, 255, 255, 0.1);
 }
-/* FOOTER */
+
 .footer {
   padding: 50px 80px 0 80px;
   background-color: #1F2A13;
@@ -183,7 +182,7 @@ p, h2 {
 .footer-bottom {
   padding-bottom: 20px;
 }
-/* ICONS */
+
 .icon-whatsapp {
   bottom: 28px;
 }
@@ -199,7 +198,7 @@ p, h2 {
 .icon-linkedin {
   bottom: 334px;
 }
-/* ANIMATION */
+
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -271,7 +270,6 @@ p, h2 {
     opacity: 1;
   }
 }
-/* INDEX */
 .main-foto-home {
   background-image: url("../assets/GSH foto01.jpg");
 }
@@ -329,7 +327,7 @@ p, h2 {
   font-weight: 400;
   font-size: 16px;
 }
-/* SERVICES */
+
 .main-foto-services {
   background-image: url("../assets/GSH foto04a.jpg");
 }
@@ -424,7 +422,7 @@ p, h2 {
   padding: 5px;
   margin: 56px 0 0;
 }
-/* EXPERIENCE */
+
 .main-foto-experience {
   background-image: url("../assets/GSH foto02a.jpg");
 }
@@ -591,7 +589,7 @@ p, h2 {
 .checked {
   color: orange;
 }
-/* GALLERY */
+
 .main-foto-gallery {
   background-image: url("../assets/GSH foto05a.jpg");
 }
@@ -783,7 +781,7 @@ img.hover-shadow {
 }
 
 .card-1 {
-  --bg-image: url(../assets/gallery/berdoom.jpg) ;
+  --bg-image: url(../assets/gallery/bedroom.jpg) ;
 }
 
 .card-2 {
@@ -849,7 +847,7 @@ img.hover-shadow {
   background-color: #6e5924;
   scale: 120%;
 }
-/* CONTACT */
+
 .main-foto-contact {
   background-image: url("../assets/GSH foto03a.jpg");
 }
@@ -992,7 +990,7 @@ img.hover-shadow {
   margin: 0 30px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 }
-/* MEDIA */
+
 @media screen and (max-width: 1200px) {
   .header {
     padding: 20px 80px 0 80px;
