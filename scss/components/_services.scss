@@ -10,30 +10,30 @@
     color: map-get($colores , face-services);
 }
 .container-exp{
-display: nth($display-form , 1);
-flex-wrap: wrap;
-justify-content: map-get($posicion-content , spc-around);
-column-gap: 100px;
+    display: nth($display-form , 1);
+    flex-wrap: wrap;
+    justify-content: map-get($posicion-content , spc-around);
+    column-gap: 100px;
 }
 .container-exp .card-exp{
-position: relative;
-cursor: pointer;
+    position: relative;
+    cursor: pointer;
 }
 .container-exp .card-exp .face{
-width: 300px;
-height: 200px;
-transition: 0.5s;
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
 }
 .container-exp .card-exp .face.face1{
-position: relative;
-background: map-get($colores , face-services);
-display: nth($display-form , 1);
-flex-direction: column;
-gap: 10px;
-justify-content: map-get($posicion-content, cent);
-align-items: map-get($posicion-content, cent);
-z-index: 1;
-transform: translateY(60px);
+    position: relative;
+    background: map-get($colores , face-services);
+    display: nth($display-form , 1);
+    flex-direction: column;
+    gap: 10px;
+    justify-content: map-get($posicion-content, cent);
+    align-items: map-get($posicion-content, cent);
+    z-index: 1;
+    transform: translateY(60px);
 }
 .container-exp .card-exp:hover .face.face1{
     background: map-get($colores , footercolorshadow);
