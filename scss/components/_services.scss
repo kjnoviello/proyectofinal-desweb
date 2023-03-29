@@ -9,6 +9,9 @@
     font-weight: 900;
     color: map-get($colores , face-services);
 }
+#imagen_small{
+    display: nth($display-form , 3);
+}
 .container-exp{
     display: nth($display-form , 1);
     flex-wrap: wrap;

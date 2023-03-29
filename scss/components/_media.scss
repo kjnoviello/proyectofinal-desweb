@@ -119,3 +119,38 @@
     #br{
         display: nth($posicion-content , 3); }     
 }
+@media (max-width:350px){
+    .iconos-s{
+        flex-wrap: wrap;
+        align-items: map-get($posicion-content , cent); }
+    .footer p{
+        font-size: $ftn-12;}
+    .footer-top-div{
+        width: 180px; }
+    .footer-logo{
+        width: 200px;}
+    .footer-top{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));}
+    .section-foto{
+        width: 150px;}
+    .main-div{
+        flex-wrap: wrap;
+        padding: 30px 30px}
+    .container-exp .card-exp .face{
+        width: 250px;}
+    .contact-iframe{
+        width:250px;}
+    .contact-section-text{
+        margin: 0 20px;}
+    .contact-board-booking{
+        font-size: 12px;}
+    #imagen_big{
+        display: nth($display-form , 3);}
+    #imagen_small{
+        display: initial;}
+    .container-exp .card-exp .face{
+        height: 163px;}
+    .blog-post__img{
+        min-width: 250px;
+    }
+}

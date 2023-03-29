@@ -341,6 +341,10 @@ p, h2 {
   color: #333;
 }
 
+#imagen_small {
+  display: none;
+}
+
 .container-exp {
   display: flex;
   flex-wrap: wrap;
@@ -1154,6 +1158,55 @@ img.hover-shadow {
   }
   #br {
     display: spc-around space-around;
+  }
+}
+@media (max-width: 350px) {
+  .iconos-s {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+  .footer-top-div {
+    width: 180px;
+  }
+  .footer-logo {
+    width: 200px;
+  }
+  .footer-top {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .section-foto {
+    width: 150px;
+  }
+  .main-div {
+    flex-wrap: wrap;
+    padding: 30px 30px;
+  }
+  .container-exp .card-exp .face {
+    width: 250px;
+  }
+  .contact-iframe {
+    width: 250px;
+  }
+  .contact-section-text {
+    margin: 0 20px;
+  }
+  .contact-board-booking {
+    font-size: 12px;
+  }
+  #imagen_big {
+    display: none;
+  }
+  #imagen_small {
+    display: initial;
+  }
+  .container-exp .card-exp .face {
+    height: 163px;
+  }
+  .blog-post__img {
+    min-width: 250px;
   }
 }
 
