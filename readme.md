@@ -4,7 +4,7 @@
 ``` bash
     https://grandscaurizahotel.netlify.app/
 ```   
-![Imagen de portada](/assets/Preview.png) "Esta es una previsualizacion del proyecto")
+![Imagen de portada](/assets/Preview.png "Esta es una previsualizacion del proyecto.")
 
 ## Descripcion
 
