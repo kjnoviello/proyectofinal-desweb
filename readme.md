@@ -8,12 +8,12 @@
 
 ## Descripcion
 
-    Página web de un hotel de lujo divido en secciones con animaciones y dinamismo en imágenes construida totalmente de cero y completamente adaptada a dispositivos móbiles. Contiene una seccion de tarjetas con efecto paralax y modales, una seccion de contacto con formulario e íconos fijos de redes sociales y medios de comunicación. El proyecto fue para el trabajo final del curso Desarrollo Web dictado por Coderhouse.
+Página web de un hotel de lujo divido en secciones con animaciones y dinamismo en imágenes construida totalmente de cero y completamente adaptada a dispositivos móbiles. Contiene una seccion de tarjetas con efecto paralax y modales, una seccion de contacto con formulario e íconos fijos de redes sociales y medios de comunicación. El proyecto fue para el trabajo final del curso Desarrollo Web dictado por Coderhouse.
 
 
 ## Estado
 
-    El estado del proyecto se encuentra finalizado. El objetivo es una página web descriptiva e informativa sobre la capacidad de un hotel con respecto a las comodidades. Una posible mejora es una respuesta del formulario en la seccion contacto.
+El estado del proyecto se encuentra finalizado. El objetivo es una página web descriptiva e informativa sobre la capacidad de un hotel con respecto a las comodidades. Una posible mejora es una respuesta del formulario en la seccion contacto.
 
 
 ## Tecnologias
@@ -53,7 +53,7 @@
 
 ## Extra
 
-    _Desarrollado por **Kevin Joel Noviello** en febrero del 2023, Argentina._
+_Desarrollado por **Kevin Joel Noviello** en febrero del 2023, Argentina._
 
 
 
