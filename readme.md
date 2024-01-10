@@ -1,9 +1,8 @@
 # Grand Scauriza Hotel - Best hotel to relax.
 ## Demo
 
-``` bash
-    https://grandscaurizahotel.netlify.app/
-```   
+[Demo Gradscaurizahotel](https://grandscaurizahotel.netlify.app)
+
 ![Imagen de portada](/assets/Preview.png "Esta es una previsualizacion del proyecto.")
 
 ## Descripcion
@@ -18,33 +17,33 @@ El estado del proyecto se encuentra finalizado. El objetivo es una página web d
 
 ## Tecnologias
 
-    **HTML + CSS**
-    **Javascript**
-    **SASS**
-    **SEO**
+**HTML + CSS**
+**Javascript**
+**SASS**
+**SEO**
 
 
 ##  Dependencias
 
-    * "scroll-reveal" - Utilizado para dar efecto en el montaje de la página.
-    * ""https://remixicon.com/" - Libreria de donde se obtuvo todos los iconos.
+* "scroll-reveal" - Utilizado para dar efecto en el montaje de la página.
+* ""https://remixicon.com/" - Libreria de donde se obtuvo todos los iconos.
 
 
 ## Uso de la app-web
 
-    1. Clonar el repositorio desde GitHub.
+1. Clonar el repositorio desde GitHub.
 
 ``` bash
     https://github.com/kjnoviello/proyectofinal-desweb
 ```    
 
-    2. Asegurarse que se está en la carpeta correcta para instala las dependencias.
+2. Asegurarse que se está en la carpeta correcta para instala las dependencias.
 
 ``` bash
     npm install
 ```   
 
-    3. Ejecuta el proyecto.
+3. Ejecuta el proyecto.
 
 ``` bash
     Con la extensión Go Live
