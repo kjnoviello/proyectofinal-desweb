@@ -1,7 +1,7 @@
 # Grand Scauriza Hotel - Best hotel to relax.
 ## Demo
 
-[Demo Gradscaurizahotel](https://grandscaurizahotel.netlify.app)
+[Ir a Grad Scauriza Hotel](https://grandscaurizahotel.netlify.app)
 
 ![Imagen de portada](/assets/Preview.png "Esta es una previsualizacion del proyecto.")
 
@@ -17,10 +17,10 @@ El estado del proyecto se encuentra finalizado. El objetivo es una página web d
 
 ## Tecnologias
 
-**HTML + CSS**
-**Javascript**
-**SASS**
-**SEO**
+* HTML + CSS
+* Javascript
+* SASS
+* SEO
 
 
 ##  Dependencias
