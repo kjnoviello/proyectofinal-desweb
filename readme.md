@@ -53,7 +53,4 @@ El estado del proyecto se encuentra finalizado. El objetivo es una página web d
 ## Extra
 
 _Desarrollado por **Kevin Joel Noviello** en febrero del 2023, Argentina._
-
-
-
-
+[Linkedin Kevin Joel Noviello](https://www.linkedin.com/in/kevinjoelnoviello/)
